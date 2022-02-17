@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import style from "./about.module.scss";
 import clsx from "clsx";
-const urlimg5 = "/assets/metagunner-title.webp";
+const urlimg5 = "/assets/SLOGAN.webp";
+const BgVideo = "/assets/Background_Video.webp";
 // const urlImgBg = "/assets/banner_Metagunner.webp";
 
 function About() {
@@ -26,7 +27,8 @@ function About() {
             ready to earn valuable rewards and enjoy the moment after stressful
             hours of work.
           </h1>
-          <a
+          <div className={style.WrapperBtn}>
+              <a
             href="https://drive.google.com/file/d/1VnfYeY06nvHLtG-8IvbJEX9avpFSyO4l/view"
             className={clsx("btn btnPrimary", style.btnMB)}
             target="_blank"
@@ -35,8 +37,8 @@ function About() {
             data-aos-delay="400"
           >
             Lite Paper
-          </a>
-          <a
+              </a>
+              <a
             className={clsx("btn btnSecondary", style.btnMB)}
             target="_blank"
             rel="noreferrer"
@@ -46,7 +48,12 @@ function About() {
             id="playnow"
           >
             Play Now
-          </a>
+              </a>
+          </div>
+          <div className={style.WrapperVideo}>
+            <img src={BgVideo} alt="" />
+            <video></video>
+          </div>
         </div>
       </div>
     </section>

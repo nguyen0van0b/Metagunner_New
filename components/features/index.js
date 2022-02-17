@@ -1,134 +1,179 @@
-import style from "./features.module.scss";
 import clsx from "clsx";
-const urlFEATURES = "/assets/GAME-FEATURES_Metagunner.webp";
-const urlImgCam = "/assets/CampaignMode_Metagunner.webp";
-const urlImgArena = "/assets/Arena_Mode_Metagunner.webp";
-const urlImgUpgrade = "/assets/FEATURES4_Metagunner.webp";
-const urlImgRank = "/assets/RANKING_Metagunner.webp";
+import React, { Component } from "react";
+import Slider from "react-slick";
+import style from "../character/character.module.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+const urlScout = "/assets/Scout_Metagunner.mp4";
+const urlOfficer = "/assets/Officer_Metagunner.mp4";
+const urlSniper = "/assets/Sniper_Metagunner.mp4";
+const urlSpecial_Force = "/assets/Special-Force_Metagunner.mp4";
+const urlDestroyer = "/assets/Destroyer_Metagunner.mp4";
+const urlGunner = "/assets/Gunner_Metagunner.mp4";
+const urlMedic = "/assets/Medic_Metagunner.mp4";
+const urlCHARACTER = "/assets/CHARACTER_Metagunner.webp";
 
-function Features() {
-  return (
-    <section className={style.features} id="features">
-      <div className="container">
-        <div className={style.featuresTitle}>
-          <img
-            src={urlFEATURES}
-            alt=""
-            data-aos="fade-up"
-            data-aos-once="true"
-          />
+
+export default class AsNavFor extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nav1: null,
+      nav2: null,
+    };
+  }
+
+  componentDidMount() {
+    this.setState({
+      nav1: this.slider1,
+      nav2: this.slider2,
+    });
+  }
+
+  render() {
+    const settings1 = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      appendDots: dots => (
+        <div
+          style={{
+            backgroundColor: "#ddd",
+            borderRadius: "10px",
+            padding: "10px"
+          }}
+        >
+          <ul style={{ margin: "0px" }}> {dots} </ul>
         </div>
-        <div className={style.featuresWrapper}>
-          <div
-            className={clsx(style.featureCard, style.featureCardOne)}
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="300"
-            data-aos-duration="500"
-          >
-            <div className={style.featureCardBottom}>
-              <div className={style.featureCardBottomTitle}>
-                <h3>
-                  <span>Campaign</span>
-                </h3>
-                <p>
-                  This mode is the main feature of MetaGunner, where players
-                  battle alien monsters to receive valuable rewards. Players
-                  embark on exciting adventures and play as soldiers armed with
-                  weapons to fight monsters in deadly lands.
-                </p>
-              </div>
-            </div>
-            <div className={style.featureCardTop}>
-              <div className={style.featureCardTopImg}>
-                <img src={urlImgCam} alt="SHOWROOM" />
-              </div>
-            </div>
-          </div>
-          <div
-            className={clsx(style.featureCard, style.featureCardTwo)}
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="300"
-            data-aos-duration="500"
-          >
-            <div className={style.featureCardTop}>
-              <div className={style.featureCardTopImg}>
-                <img src={urlImgArena} alt="SHOWROOM" />
-              </div>
-            </div>
-            <div className={style.featureCardBottom}>
-              <div className={style.featureCardBottomTitle}>
-                <h3>
-                  <span>Arena</span>
-                </h3>
-                <p>
-                  Arena Mode consists of two different sub-modes: Battle Royale
-                  and Team Fire. Battle Royale is where soldiers join in the
-                  deadliest battles to determine the greatest warrior. TeamFire
-                  is the place for teams of five to combat and decide which team
-                  is the strongest of all.{" "}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className={clsx(style.featureCard, style.featureCardThree)}
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="600"
-            data-aos-duration="500"
-          >
-            <div className={style.featureCardBottom}>
-              <div className={style.featureCardBottomTitle}>
-                <h3>
-                  <span>Upgrade</span>
-                </h3>
-                <p>
-                  {`Upgrade is a feature that allows players to increase the level
-                  and attribute points of weapons. Players need to own an
-                  upgrade item (Wrench) and pay a small fee corresponding to the
-                  weapon's level to upgrade. Depending on the level, the upgrade
-                  has different success rates.`}
-                </p>
-              </div>
-            </div>
-            <div className={style.featureCardTop}>
-              <div className={style.featureCardTopImg}>
-                <img src={urlImgUpgrade} alt="SHOWROOM" />
-              </div>
-            </div>
-          </div>
-          <div
-            className={clsx(style.featureCard, style.featureCardFour)}
-            data-aos="fade-right"
-            data-aos-once="true"
-            data-aos-delay="900"
-            data-aos-duration="500"
-          >
-            <div className={style.featureCardTop}>
-              <div className={style.featureCardTopImg}>
-                <img src={urlImgRank} alt="SHOWROOM" />
-              </div>
-            </div>
-            <div className={style.featureCardBottom}>
-              <div className={style.featureCardBottomTitle}>
-                <h3>
-                  <span>Leaderboard</span>
-                </h3>
-                <p>
-                  The leaderboard is a ranking system in which players are
-                  assessed based on their achievements in MetaGunner.
-                  Leaderboard helps increase competition among players and
-                  create positive challenges, forcing them to play hard to gain
-                  significant achievements.
-                </p>
-              </div>
-            </div>
+      ),
+      customPaging: i => (
+        <div
+          style={{
+            width: "30px",
+            color: "blue",
+            border: "1px blue solid"
+          }}
+        >
+          {i + 1}
+        </div>
+      ),
+    };
+    return (
+      <section className={style.character} id="character">
+        <div className={clsx("container", style.characterContainer)}>
+          <div className={style.charactertitle}>
+            <img src={urlCHARACTER} alt="" />
+            <p>
+              The 15 characters of MetaGunner are divided into seven types of
+              troops
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-  );
+        <Slider
+          asNavFor={this.state.nav2}
+          ref={(slider) => (this.slider1 = slider)}
+          {...settings1}
+        >
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Gunner</h2>
+              <span>
+              The Gunner is a well-trained Navy SEAL that can improvise, adapt, and overcome any situation. He is a real weapon-savvy and can make the most of everything around him to finish a job.
+              </span>
+            </div>
+            <video
+              src={urlGunner}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+            ></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Scout</h2>
+              <span>
+              The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu who always comes with a plan and leaves a place with many dead bodies.
+              </span>
+            </div>
+            <video
+              src={urlScout}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+            ></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Sniper</h2>
+              <span>{`The Sniper is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy because you will never know when he's going to get you. His targets never survive.`}</span>
+            </div>
+            <video
+              src={urlSniper}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+            ></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Special Force</h2>
+              <span>
+              The Special Force is an elite trooper specializing in large-scale tasks and always completing them thoroughly. He can deliver every lethal method that you can think of to kill a man.
+              </span>
+            </div>
+            <video
+              src={urlSpecial_Force}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+            ></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Destroyer</h2>
+              <span>
+              The Destroyer is a heavy-built six-foot-tall man who loves big guns and explosives. His enemies may outrun him, but they cannot outrun his grenades.
+              </span>
+            </div>
+            <video
+              src={urlDestroyer}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+            ></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Medic</h2>
+              <span>
+              The Medic is an extremely experienced battlefield doctor, but do not make the mistake of underestimating his fighting skills. He brings people back from the brink of death, yet he also does a perfect job of sending one to hell.
+              </span>
+            </div>
+            <video
+              src={urlMedic}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+            ></video>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Officer</h2>
+              <span>
+              The Officer is a respectful but ruthless soldier that holds a record of bringing 21 terrorists to justice by himself. 
+              </span>
+            </div>
+            <video
+              src={urlOfficer}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+            ></video>
+          </div>
+        </Slider>
+      </section>
+    );
+  }
 }
-export default Features;

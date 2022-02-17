@@ -6,7 +6,7 @@
 }
 .header {
     width: 100%;
-    height: 75px;
+    height: 90px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -20,7 +20,7 @@
     &Container {
         transition: top 1s;
         &Logo{
-            margin-top: -20px;
+            margin-top: -10px;
             & img{
                 width: 200px;
                 height: 200px;
@@ -28,7 +28,7 @@
             }
         }
         &Down {
-            height: 70px;
+            height: 90px;
             & .headerContainerLogo img{
                 width: 110px;
                 height: 110px;
@@ -38,14 +38,14 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: 1500px;
         margin: 0 auto;
         position: fixed;
         top: 0;
         left: auto;
         &Menu {
             width: calc(100% - 280px);
-            height: 70px;
+            height: 90px;
             & nav {
                 height: 100%;
             }

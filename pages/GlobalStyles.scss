@@ -127,20 +127,20 @@ video {
 }
 
 .btn{
-    font-family: "Bangers", sans-serif;
     letter-spacing: .03em;
     text-decoration: none;
-    padding: 25px 60px;
-    color: var(--color_text_white);
+    margin-top: 50px;
+    padding: 25px 79px;
+    color: var(--color_primary);
     font-weight: 700;
     font-size: 30px;
     &Primary {
-    background-image: url('../public/assets/blue_button.webp');
+    background-image: url('../public/assets/button_about_Metagunner.webp');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
     &Secondary {
-        background-image: url('../public/assets/red_button.webp');
+        background-image: url('../public/assets/button_about_Metagunner.webp');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
