@@ -2,7 +2,7 @@
     --color_primary:#ff2f00;
     // --color_primary:#fb1b00;
     // --color_black_down:#000;
-    --color_black_down:#000000ad;
+    --color_black_down:#00000069;
     --color_text_white:#fff;
     --bg_black_body:#000;
     --bg_grey_btn:#524c4c;
@@ -34,6 +34,11 @@ body {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     background-color: var(--bg_black_body);
+    background-image: url("../public/assets/BACKGROUND.webp");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
 }
 
 video {

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import style from "./about.module.scss";
 import clsx from "clsx";
 const urlimg5 = "/assets/metagunner-title.webp";
-const urlImgBg = "/assets/banner_Metagunner.webp";
+// const urlImgBg = "/assets/banner_Metagunner.webp";
 
 function About() {
   useEffect(() => {
@@ -17,7 +17,7 @@ function About() {
   return (
     <section className={style.about} id="about">
       <div className={clsx("container", style.container)}>
-        <img src={urlImgBg} className={style.imgBg} alt="" />
+        {/* <img src={urlImgBg} className={style.imgBg} alt="" /> */}
         <div className={style.aboutWrapper}>
           <img src={urlimg5} alt="" />
           <h1 data-aos="zoom-in" data-aos-delay="200">

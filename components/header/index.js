@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from 'next/image';
 import style from "./header.module.scss";
+
+const urlBottomMenu = "/assets/bottom_menu.webp";
 const urlBtn = "/assets/orange_button.webp";
 const imgTelegram = "/assets/telegram.svg";
 const imgDiscord = "/assets/discord.svg";
@@ -64,14 +66,13 @@ function Header() {
         className={clsx(style.header, { [style.headerDown]: show })}
         id="navbar"
       >
-        <div
-          className={clsx(style.headerContainer, {
+        <div className={clsx(style.headerContainer, {
             [style.headerContainerDown]: show,
           })}
           id="navbarContainer"
         >
           <div className={style.headerContainerLogo}>
-            <img src={`/assets/Logo_Metagunner.webp`} alt="logo" onClick={handleScrollTop} />
+            <img src={`/assets/Logo_Metagunner.webp`} alt="logo"/>
           </div>
           <div
             className={clsx(style.headerContainerMenu, {
@@ -84,28 +85,38 @@ function Header() {
                 id="myTopnav"
               >
                 <li>
+                  <a onClick={handleScrollTop} className={style.mainMenuHome} >HOME</a>
+                </li>
+                <li>
                   <a href="#features">FEATURES</a>
+                  <img src={urlBottomMenu} alt=""/>
                 </li>
                 {/* <li><a href="#NFTsItem">NFTs Item</a></li> */}
                 <li>
                   <a href="#NFTsItem">NFT CARD</a>
+                  <img src={urlBottomMenu} alt=""/>
                 </li>
                 <li>
                   <a href="#character">CHARACTER</a>
+                  <img src={urlBottomMenu} alt=""/>
                 </li>
                 <li>
                   <a href="#roadmap">ROADMAP</a>
+                  <img src={urlBottomMenu} alt=""/>
                 </li>
                 <li>
                   <a href="#tokenomics">TOKENOMICS</a>
+                  <img src={urlBottomMenu} alt=""/>
                 </li>
                 <li>
                   <a href="#TEAM">TEAM</a>
+                  <img src={urlBottomMenu} alt=""/>
                 </li>
                 <li>
                   <a href="https://whitepaper.metagunner.io/" target="_blank" rel="noreferrer">
                     WHITEPAPER
                   </a>
+                  <img src={urlBottomMenu} alt=""/>
                 </li>
               </ul>
             </nav>
