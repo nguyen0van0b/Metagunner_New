@@ -12,7 +12,8 @@ function Roadmap(){
         <section className={style.roadmap} id='roadmap'>
             <div className={clsx('container',style.roadmapContainer)}>
                 <div className={style.roadmapTitle}>
-                <img src={urlTitle} alt=""/>
+                {/* <img src={urlTitle} alt=""/> */}
+                    <h2>ROADMAP</h2>
                 </div>
             </div>
         {/* <img src={urlImg1} className={style.imgRoadmap} alt=""/> */}

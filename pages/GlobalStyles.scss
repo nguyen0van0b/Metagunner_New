@@ -230,7 +230,9 @@ ul.slick-dots {
       }
     }
 }
-
+.slick-current img{
+    filter: grayscale(0) !important;
+}
 // .slick-next{
 //     background-image: url('../public/assets/next.webp') !important;
 //     background-position: center right !important;

@@ -1,24 +1,23 @@
 
 .Advisors {
     overflow: hidden;
-    background-image: url(../../public/assets/bg_features2.webp);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding-top: 80px;
+    // background-image: url(../../public/assets/bg_features2.webp);
+    // background-position: center right;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // position: relative;
+    padding-top: 90px;
     &Title{
-        width: 26%;
-        margin: auto;
-        margin-bottom: 4%;
+        // width: 26%;
+        // margin: auto;
+        // margin-bottom: 4%;
+        text-align: center;
+        font-size: 45px;
+        color: var(--color_text_white);
     }
     &Wrapper {
         &Top{
             margin: auto;
-            // display: grid;
-            // gap: 5%;
-            // grid-template-columns: repeat(auto-fit, minmax(calc(360px - 5%), calc(770px - 5%)));
-            // justify-content: center;
             display: flex;
             margin-bottom: 5%;
             justify-content: center;
@@ -29,11 +28,11 @@
                 text-align: center;
                 display: flex;
                 &Top {
-                    width: 55%;
+                    width: 45%;
                 }
                 &Bottom {
                     margin-top: 1rem;
-                    width: 45%;
+                    width: 55%;
                     text-align: left;
                     padding-left: 20px;
                     & .name{

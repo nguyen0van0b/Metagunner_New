@@ -16,30 +16,32 @@
         z-index: 1;
         left: 50%;
         transform: translate(-50%,0);
-        width: 26%;
-        top: 80px;
+        width: 100%;
+        text-align: center;
         & p{
             color: var(--color_text_white);
-            font-size: 1.2rem;
-            font-weight: 700;
-            width: 230%;
-            margin-left: -55%;
+            font-size: 1rem;
+            font-weight: 200;
         }
     }
     & h1{
+        font-family: 'Russo One', sans-serif;
         font-size: 45px;
         color: var(--color_text_white);
         text-align: center;
     }
     &FirstSlider{
-        width: 40%;
+        width: 35%;
         margin: auto;
         position: absolute!important;
-        top: 30%;
+        top: 25%;
         left: 50%;
         transform: translateX(-50%);
         &Item{
             width: 5.15% !important;
+        }
+        & img{
+            filter: grayscale(100%);
         }
     }
     &SecondSlider{ 
@@ -47,12 +49,10 @@
         display: flex !important;
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+        height: 40vh;
         &Wrapper{
             top: 35%;
-        }
-        & img{
-        width: 50% !important;
-        height: 50% !important;
         }
         &Title{
             position: absolute;
@@ -62,13 +62,29 @@
             color: var(--color_text_white);
             width: 34% !important;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.781);
-            border-radius: 30px;
+            // background-color: rgba(0, 0, 0, 0.781);
+            // border-radius: 30px;
             & h2{
+                color: var(--color_primary);
                 margin-bottom: 15px;
             }
             
         }
+    }
+}
+.Soldier{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    &Wrapper{
+        position: relative;
+        z-index: 1;
+    }
+    &Bottom{
+        position: absolute;
+        top: 45%;
+        width: 70%;
+        z-index: 0;
     }
 }
 @media screen and (max-width: 1200px) {

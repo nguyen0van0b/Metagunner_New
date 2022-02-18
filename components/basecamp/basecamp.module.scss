@@ -2,35 +2,36 @@
     position: relative;
     width: 100%;
     height: 100%;
+    padding-top: 90px;
     &>img{
         display: none;
     };
-}
-.basecampContainer{
-    position: absolute;
-    left: 50%;
-    height: 0 !important;
-    transform: translate(-50%,0);
-    z-index: 1;
-}
-.basecampTitle{
-    position: absolute;
-    width: 26%;
-    left: 50%;
-    top: 35px;
-    transform: translate(-50%,0);
-    &P{
-        position: absolute;
-        width: 60%;
-        top: 14%;
-        left: 50%;
-        transform: translate(-50%,0);
-        font-size: 1.4rem;
-        color: var(--color_text_white);
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.76);
-        border-radius: 20px;
+    &Title{
         text-align: center;
+        & h2{
+            font-family: Russo One,sans-serif;
+            font-size: 45px;
+            color: var(--color_text_white);
+        }
+        &P{
+            width: 50%;
+            font-size: 1rem;
+            color: var(--color_text_white);
+            margin: 30px auto;
+            text-align: center;
+        }
+    }
+    &Video{
+        background-image: url(../../public/assets/Background_Video.webp);
+        background-size: 100% 100%;
+        max-width: 1265px;
+        max-height: 715px;
+        margin: auto;
+        margin-bottom: 50px;
+        & video{
+            width: 88%;
+            margin: 3% 6%;
+        }
     }
 }
 

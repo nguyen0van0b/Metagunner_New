@@ -15,7 +15,8 @@ function Advisors(){
         <section className={style.Advisors} id='TEAM'>
         <div className="container">
             <div className={style.AdvisorsTitle}>
-                <img src={urlTitle} alt=""/>
+                {/* <img src={urlTitle} alt=""/> */}
+                <h2>TEAM</h2>
             </div>
         </div>
             <div className={style.AdvisorsWrapperTop}>

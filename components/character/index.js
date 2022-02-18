@@ -11,8 +11,15 @@ const urlOfficer_Icon = "/assets/Officer_Icon_Metagunner.webp";
 const urlScout_Icon = "/assets/Scout_Icon_Metagunner.webp";
 const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.webp";
 const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.webp";
-const urlDESTROYER = "/assets/DESTROYER.webp";
 const urlBottom_Soldier = "/assets/Bottom_Soldier_Metagunner.webp";
+const urlDESTROYER = "/assets/DESTROYER.webp";
+const urlSP = "/assets/SP.webp";
+const urlGUNNER = "/assets/GUNNER.webp";
+const urlOFFICER = "/assets/OFFICER.webp";
+const urlSCOUT = "/assets/SCOUT.webp";
+const urlSNIPER = "/assets/SNIPER.webp";
+const urlMEDIC = "/assets/MEDIC.webp";
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -98,32 +105,10 @@ export default class AsNavFor extends Component {
         >
           <div className={style.characterSecondSlider}>
             <div className={style.characterSecondSliderTitle}>
-              <h2>Gunner</h2>
+              <h2>Destroyer</h2>
               <span>
-                The Gunner is a well-trained Navy SEAL that can improvise, adapt, and overcome any situation. He is a real weapon-savvy and can make the most of everything around him to finish a job.
+                The Destroyer is a heavy-built six-foot-tall man who loves big guns and explosives. His enemies may outrun him, but they cannot outrun his grenades.
               </span>
-            </div>
-            <div className={style.Soldier}>
-              <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-          </div>
-          <div className={style.characterSecondSlider}>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Scout</h2>
-              <span>
-                The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu who always comes with a plan and leaves a place with many dead bodies.
-              </span>
-            </div>
-            <div className={style.Soldier}>
-              <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-          </div>
-          <div className={style.characterSecondSlider}>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Sniper</h2>
-              <span>{`The Sniper is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy because you will never know when he's going to get you. His targets never survive.`}</span>
             </div>
             <div className={style.Soldier}>
               <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
@@ -138,31 +123,19 @@ export default class AsNavFor extends Component {
               </span>
             </div>
             <div className={style.Soldier}>
-              <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
+              <img src={urlSP} className={style.SoldierWrapper}></img>
               <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
             </div>
           </div>
           <div className={style.characterSecondSlider}>
             <div className={style.characterSecondSliderTitle}>
-              <h2>Destroyer</h2>
+              <h2>Gunner</h2>
               <span>
-                The Destroyer is a heavy-built six-foot-tall man who loves big guns and explosives. His enemies may outrun him, but they cannot outrun his grenades.
+                The Gunner is a well-trained Navy SEAL that can improvise, adapt, and overcome any situation. He is a real weapon-savvy and can make the most of everything around him to finish a job.
               </span>
             </div>
             <div className={style.Soldier}>
-              <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-          </div>
-          <div className={style.characterSecondSlider}>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Medic</h2>
-              <span>
-                The Medic is an extremely experienced battlefield doctor, but do not make the mistake of underestimating his fighting skills. He brings people back from the brink of death, yet he also does a perfect job of sending one to hell.
-              </span>
-            </div>
-            <div className={style.Soldier}>
-              <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
+              <img src={urlGUNNER} className={style.SoldierWrapper}></img>
               <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
             </div>
           </div>
@@ -174,7 +147,41 @@ export default class AsNavFor extends Component {
               </span>
             </div>
             <div className={style.Soldier}>
-              <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
+              <img src={urlOFFICER} className={style.SoldierWrapper}></img>
+              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
+            </div>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Scout</h2>
+              <span>
+                The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu who always comes with a plan and leaves a place with many dead bodies.
+              </span>
+            </div>
+            <div className={style.Soldier}>
+              <img src={urlSCOUT} className={style.SoldierWrapper}></img>
+              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
+            </div>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Sniper</h2>
+              <span>{`The Sniper is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy because you will never know when he's going to get you. His targets never survive.`}</span>
+            </div>
+            <div className={style.Soldier}>
+              <img src={urlSNIPER} className={style.SoldierWrapper}></img>
+              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
+            </div>
+          </div>
+          <div className={style.characterSecondSlider}>
+            <div className={style.characterSecondSliderTitle}>
+              <h2>Medic</h2>
+              <span>
+                The Medic is an extremely experienced battlefield doctor, but do not make the mistake of underestimating his fighting skills. He brings people back from the brink of death, yet he also does a perfect job of sending one to hell.
+              </span>
+            </div>
+            <div className={style.Soldier}>
+              <img src={urlMEDIC} className={style.SoldierWrapper}></img>
               <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
             </div>
           </div>
