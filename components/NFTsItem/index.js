@@ -35,31 +35,53 @@ const urlSniper_rifle = "/assets/sniper_rifle_5_Metagunner.webp"
 
 const urlCHARACTER = "/assets/Character-Card_Metagunner.webp"
 const urlWeapon = "/assets/Weapon-Card_Metagunner.webp"
+const urlprev_blue = "/assets/prev_blue.webp"
 
-function SampleNextArrow(props) {
+function SampleNextArrowBlue(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '11%',height: '100%'}}
+      style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1)'}}
       onClick={onClick}
     />
   );
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrowBlue(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{...style,position: 'absolute',top: '50%',left: '-10%',zIndex:1,width: '11%',height: '100%'}}
+      style={{position: 'absolute',top: '50%',left: '-10%',zIndex:1,width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
       onClick={onClick}
     />
   );
 }
+function SampleNextArrowOrange(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1)'}}
+          onClick={onClick}
+        />
+      );
+    }
+    
+    function SamplePrevArrowOrange(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{position: 'absolute',top: '50%',left: '-10%',zIndex:1,width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
+          onClick={onClick}
+        />
+      );
+    }
 export default class AsNavFor extends Component {
    render() {
-    const settings = {
+    const settingsBlue = {
       slidesToShow: 6,
       infinite:true,
       slidesToScroll: 1,
@@ -67,8 +89,8 @@ export default class AsNavFor extends Component {
       autoplay: true,
       autoplaySpeed: 2000,
       pauseOnHover: true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      nextArrow: <SampleNextArrowBlue />,
+      prevArrow: <SamplePrevArrowBlue />,
       responsive: [
             {
               breakpoint: 1024,
@@ -76,7 +98,44 @@ export default class AsNavFor extends Component {
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+            //     dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+          ]
+    };
+    const settingsOrange = {
+      slidesToShow: 6,
+      infinite:true,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      pauseOnHover: true,
+      nextArrow: <SampleNextArrowOrange />,
+      prevArrow: <SamplePrevArrowOrange />,
+      responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+            //     dots: true
               }
             },
             {
@@ -100,11 +159,12 @@ export default class AsNavFor extends Component {
       <section className={style.NFTsItem} id="NFTsItem">
         <div className={clsx('container',style.NFTsItemContainer)}>
           <div className={style.NFTsItemTitle}>
-            <img src={urlCHARACTER} alt=""/>
+            {/* <img src={urlCHARACTER} alt=""/> */}
+            <h2>CHARACTER CARD</h2>
           </div>
         </div>
         <Slider
-          {...settings}
+          {...settingsOrange}
           className={style.NFTsItemSlider}
         >
           <div>
@@ -155,11 +215,12 @@ export default class AsNavFor extends Component {
         </Slider>
         <div className={clsx('container',style.NFTsItemContainer)}>
           <div className={style.NFTsItemTitle}>
-            <img src={urlWeapon} alt=""/>
+            {/* <img src={urlWeapon} alt=""/> */}
+            <h2>WEAPON CARD</h2>
           </div>
         </div>
         <Slider
-          {...settings}
+          {...settingsBlue}
           className={clsx(style.NFTsItemSlider,style.NFTsItemSliderWeapon)}
         >
           <div>

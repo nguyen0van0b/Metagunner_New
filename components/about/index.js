@@ -52,7 +52,10 @@ function About() {
           </div>
           <div className={style.WrapperVideo}>
             <img src={BgVideo} alt="" />
-            <video></video>
+            <video //src={urlGunner}
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"></video>
           </div>
         </div>
       </div>

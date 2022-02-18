@@ -1,34 +1,34 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills-d8d763fa46686a9a.js"
+    "static/chunks/polyfills-5cd94c89d3acac5f.js"
   ],
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/YoZNhUj8_XBwKsb9JMhyM/_buildManifest.js",
-    "static/YoZNhUj8_XBwKsb9JMhyM/_ssgManifest.js",
-    "static/YoZNhUj8_XBwKsb9JMhyM/_middlewareManifest.js"
+    "static/HqEG5aKzYpnPazpLI3mYM/_buildManifest.js",
+    "static/HqEG5aKzYpnPazpLI3mYM/_ssgManifest.js",
+    "static/HqEG5aKzYpnPazpLI3mYM/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
-      "static/chunks/webpack-b927671265afed5e.js",
-      "static/chunks/framework-91d7f78b5b4003c8.js",
-      "static/chunks/main-7e73d61bce33e887.js",
-      "static/chunks/124-f381f8e1a6647ac3.js",
-      "static/css/e11c676a9a664b3c.css",
-      "static/chunks/pages/index-b08d8b843f41031c.js"
+      "static/chunks/webpack-5752944655d749a0.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a054bbf31fb90f6a.js",
+      "static/chunks/124-b8185425be0fac51.js",
+      "static/css/8c2e34a5fb371d7d.css",
+      "static/chunks/pages/index-834b3ec7fcef5b32.js"
     ],
     "/_app": [
-      "static/chunks/webpack-b927671265afed5e.js",
-      "static/chunks/framework-91d7f78b5b4003c8.js",
-      "static/chunks/main-7e73d61bce33e887.js",
-      "static/css/2ac8e1c44c535f36.css",
-      "static/chunks/pages/_app-c913c7d44f8632ad.js"
+      "static/chunks/webpack-5752944655d749a0.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a054bbf31fb90f6a.js",
+      "static/css/8347dd24d2fa7065.css",
+      "static/chunks/pages/_app-a3d5bddd2563e6c3.js"
     ],
     "/_error": [
-      "static/chunks/webpack-b927671265afed5e.js",
-      "static/chunks/framework-91d7f78b5b4003c8.js",
-      "static/chunks/main-7e73d61bce33e887.js",
+      "static/chunks/webpack-5752944655d749a0.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-a054bbf31fb90f6a.js",
       "static/chunks/pages/_error-2280fa386d040b66.js"
     ]
   },

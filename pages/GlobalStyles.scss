@@ -21,6 +21,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 img {
     width: 100%;
@@ -164,34 +165,72 @@ video {
    }
 .slick-next:before{
     content: '' !important;
-    background-image: url('../public/assets/next.webp') !important;
-    background-position: center right !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 8%;
 }
-.slick-prev:before
-{
+.slick-prev:before{
     content: '' !important;
-    // position: absolute;
-    background-image: url('../public/assets/prev.webp') !important;
-    background-position: center right !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 8%;
 }
+// .slick-next:before{
+//     content: '' !important;
+//     background-image: url('../public/assets/next.webp') !important;
+//     background-position: center right !important;
+//     background-repeat: no-repeat !important;
+//     background-size: cover !important;
+//     position: absolute;
+//     top: 50%;
+//     width: 100%;
+//     height: 8%;
+// }
+// .slick-prev:before
+// {
+//     content: '' !important;
+//     // position: absolute;
+//     background-image: url('../public/assets/prev.webp') !important;
+//     background-position: center right !important;
+//     background-repeat: no-repeat !important;
+//     background-size: cover !important;
+//     position: absolute;
+//     top: 50%;
+//     width: 100%;
+//     height: 8%;
+// }
 .slick-dots{
     bottom: 20px !important;
 }
 .slick-dots li button:before{
     font-size:10px;
 }
+ul.slick-dots {
+    bottom: 0;
+    position: relative;
+    margin-top: 0.8rem;
+
+    & > li {
+      background: #696969;
+      border-radius: 10px;
+      width: 42px;
+      height: 20px;
+
+      &.slick-active {
+        background-color: #1a9af6;
+      }
+
+      & > button {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        border: none;
+
+        &:before {
+          content: none;
+        }
+      }
+    }
+}
+
 // .slick-next{
 //     background-image: url('../public/assets/next.webp') !important;
 //     background-position: center right !important;
