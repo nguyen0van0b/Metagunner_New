@@ -2,6 +2,8 @@
 
 .character{
     position: relative;
+    height: 100vh;
+    padding-top: 90px;
     &Container{
         position: absolute;
         left: 50%;
@@ -25,16 +27,17 @@
         }
     }
     & h1{
-        color: var(--color_primary);
-        font-size: 4rem;
-        font-weight: 700;
+        font-size: 45px;
+        color: var(--color_text_white);
+        text-align: center;
     }
     &FirstSlider{
-        width: 60%;
+        width: 40%;
         margin: auto;
-        position: absolute !important;
-        bottom: 0;
-        display: none !important;
+        position: absolute!important;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
         &Item{
             width: 5.15% !important;
         }
@@ -44,13 +47,16 @@
         display: flex !important;
         flex-direction: row;
         align-items: center;
+        &Wrapper{
+            top: 35%;
+        }
         & img{
         width: 50% !important;
         height: 50% !important;
         }
         &Title{
             position: absolute;
-            left: 20%;
+            left: 55%;
             top: 40%;
             font-size: 1.2rem;
             color: var(--color_text_white);
