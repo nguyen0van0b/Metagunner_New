@@ -9,12 +9,13 @@ function Technology(){
     <section className={style.technologys} id='partners'>
         <div className="container">
             <div className={style.technologystitle}>
-                        <img src={title} alt=""/>
+                        {/* <img src={title} alt=""/> */}
+                        <h2>TECHNOLOGY INTEGRATION</h2>
             </div>
             <div className={style.technologysWrapper} data-aos="flip-up" data-aos-once="true" data-aos-delay="300">
                 <img src={logo1} alt=""/>
                 <img src={binance} alt=""/>
-                <img src={Unity} alt=""/>
+                <img className={style.technologysUnity} src={Unity} alt=""/>
              
             </div>
         </div>

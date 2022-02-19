@@ -2,12 +2,12 @@
 
 .roadmap{
     overflow: hidden;
-    background-image: url(../../public/assets/bg_features2.webp);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url(../../public/assets/bg_features2.webp);
+    // background-position: center right;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     position: relative;
-    margin-top: -6px;
+    margin-top: 90px;
     &Container{
         position: absolute;
         left: 50%;
@@ -15,21 +15,47 @@
         transform: translate(-50%,0);
         z-index: 1;
     }
-    &Title{
-        position: absolute;
-        width: 26%;
-        top: 80px;
-        left: 50%;
-        transform: translate(-50%, 0);
+    &Title h2{
+        // position: absolute;
+        // width: 26%;
+        // top: 80px;
+        // left: 50%;
+        // transform: translate(-50%, 0);
+        font-family: 'Russo One', sans-serif;
+        text-align: center;
+        font-size: 45px;
+        color: var(--color_text_white);
     }
     &Wrapper{
         display: flex;
+        margin: auto;
         margin-top: 200px;
         margin-bottom: 50px;
-        justify-content: space-evenly;
+        max-width: 1200px;
+        justify-content: center;
         flex-wrap: wrap;
+        overflow: hidden;
         &Item{
-            width: 20%;
+            width: 25%;
+            min-width: 300px;
+            & ul{
+                margin-left: 20px;
+                margin-top: 35px;
+                & li{
+                    width: 90%;
+                    color: white;
+                    line-height: 2.8;
+                    font-weight: 200;
+                }
+            }
+            & h2{
+                font-size: 42px;
+                color: var(--color_primary);
+            }
+            & img{
+                width: 101%;
+                height: auto;
+            }
         }
     }
 }

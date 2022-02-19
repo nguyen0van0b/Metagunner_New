@@ -2,7 +2,7 @@
 import style from './roadmap.module.scss'
 import clsx from 'clsx'
 const urlTitle = '/assets/Roadmap_Metagunner.webp'
-const urlItem1 = '/assets/Q1_2022_Metagunner.webp'
+const urlItem1 = '/assets/Line_Roadmap.webp'
 const urlItem2 = '/assets/Q2_2022_Metagunner.webp'
 const urlItem3 = '/assets/Q3_2022_Metagunner.webp'
 const urlItem4 = '/assets/Q4_2022_Metagunner.webp'
@@ -19,16 +19,48 @@ function Roadmap(){
         {/* <img src={urlImg1} className={style.imgRoadmap} alt=""/> */}
         <div className={style.roadmapWrapper}>
             <div className={style.roadmapWrapperItem} data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <h2>Q1 2022</h2>
                 <img src={urlItem1} alt=""/>
+                <ul>
+                    <li>Game Design & Art Concept</li>
+                    <li>Game Development</li>
+                    <li>Blockchain Development</li>
+                    <li>Marketing and Community Building</li>
+                </ul>
             </div>
             <div className={style.roadmapWrapperItem} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                <img src={urlItem2} alt=""/>
+                <h2>Q2 2022</h2>
+                <img src={urlItem1} alt=""/>
+                <ul>
+                    <li>Private Sale</li>
+                    <li>IDO</li>
+                    <li>Listing</li>
+                    <li>Metal Box Sale</li>
+                    <li>Testnet</li>
+                    <li>Game Release Version 1.0 (Mobile, PC)</li>
+                </ul>
             </div>
             <div className={style.roadmapWrapperItem} data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
-                <img src={urlItem3} alt=""/>
+                <h2>Q3 2022</h2>
+                <img src={urlItem1} alt=""/>
+                <ul>
+                    <li>Marketplace</li>
+                    <li>Staking</li>
+                    <li>Game Release Version 2.0</li>
+                    <li>Improving Game Graphics</li>
+                    <li>Adding More Features, Maps, Weapons,...</li>
+                    <li>Event</li>
+                    <li>Basecamp</li>
+                </ul>
             </div>
             <div className={style.roadmapWrapperItem} data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
-                <img src={urlItem4} alt=""/>
+                <h2>Q4 2022</h2>
+                <img src={urlItem1} alt=""/>
+                <ul>
+                    <li>MetaGunner Metaverse Development</li>
+                    <li>Tournament Event</li>
+                    <li>Game Release Version 3.0</li>
+                </ul>
             </div>
         </div>
     </section>

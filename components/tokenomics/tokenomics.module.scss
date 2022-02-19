@@ -97,53 +97,49 @@
         }
     }
 }
-@media screen and (max-width: 1500px) {
-    .tokenomicsWrapperImg img{
-                    width: 120%;
-                    margin-left: -10%;
-                }
-}
-@media screen and (max-width: 1300px) {
-    .tokenomics {
-        &Wrapper {
-            &Content {
-                padding-left: 0;
-                font-size: 1.2rem;
-            }
-            &Img img{
-                width: 100%;
-                margin-left: 0;
-            }
-        }
-    }
-    .button{
-        padding: 15px 40px;
-    }
-}
 @media screen and (max-width: 1025px) {
-    .tokenomics {
-        &Wrapper {
-            &Content {
-                padding-left:5%;
-                &Title {
-                font-size: 2.5rem;
-                }
+    .tokenomics{
+        &PieChart{
+            & img{
+                width: 70%;
+            }
+        }
+        &Text{
+            & img{
+                width: 80%;
             }
         }
     }
+}
+    @media screen and (max-width: 1000px) {
+        .tokenomics{
+            &PieChart{
+                & img{
+                    margin-right: 50px;
+                    width: 80%;
+                }
+            }
+            &Text{
+                & img{
+                    width: 90%;
+                }
+            }
+        }
 }
 @media screen and (max-width: 850px) {
     .tokenomics {
         &Wrapper {
-            flex-direction:column;
-            &Content {
-                width: 70%;
-            }
-            &Title {
-                top: -10%;
-            }
-            &Img {
-                width: 80%;
+            // flex-direction:column;
+            margin: 50px auto;
+        }
+        &PieChart{
+            width: 65%;
+            margin: auto;
+        }
+        &Text {
+            &img{
+                width: 100%;
+                margin-left: 0;
             }
         }
     }

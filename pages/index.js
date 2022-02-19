@@ -51,13 +51,13 @@ function Home() {
       <About />
       <Features />
       <NFTsItem />
-      {show && <Character />}
-      {!show && <CharacterMB />}
+     <Character /> 
+     {/* {show && } */}
+      {/* {!show && <CharacterMB />} */}
       <Basecamp />
       <Roadmap />
       <Tokenomics />
       <TEAM />
-      {/* <Partners /> */}
       <Technology />
       <Footer />
     </Layout>

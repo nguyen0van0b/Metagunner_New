@@ -43,11 +43,12 @@ function Vidwrapper(){
         <section className={style.Vidwrapper} id='vidwrapper'>
             {/* <video src={urlvideo} autoplay='autoplay' muted='muted' loop='loop' className='image1'></video> */}
             <div className={style.banner_PC}>
-            <img src={urlimg1} className='image1' data-value="5" alt="" style={{height: '100vh',width:'100%'}}/>
-            {/* <img src={urlimg2} className='image2' data-value="5" alt=""  style={{width:'110%',top:'50px',marginLeft:'-5%'}}/> */}
-            {/* <img src={urlimg3} className='image3' data-value="5" alt=""  style={{width:'100%'}}/> */}
-            <img src={urlLogo} className='image3' data-value="5" alt=""  style={{width: '370px',height: '370px',transform: 'translateX(-50%)',left: '50%',top: '4%'}}/>
-            <img src={urlimg4} className='image4' data-value="5" alt="" style={{width:'100%',top:'270px',height: '100%',zIndex: '9'}}/>
+            <img src={urlimg1} className={style.image1} data-value="5" alt="" />
+            {/* style={{height: '100vh',width:'100%'}} */}
+            <img src={urlLogo} className={style.image2} data-value="5" alt=""/>
+            {/* style={{width: '370px',height: '370px',transform: 'translateX(-50%)',left: '50%',top: '4%'}} */}
+            <img src={urlimg4} className={style.image3} data-value="5" alt=""/>
+            {/* style={{width:'100%',bottom:'-30%',top: 'auto',height: 'auto',zIndex: '9'}} */}
             {/* <img src={urlLogo} alt="logo" className={style.image5} style={{width:'40%',margin:'auto'}}/> */}
             </div>
             <div className={style.banner_MB}>

@@ -42,7 +42,7 @@ function SampleNextArrowBlue(props) {
   return (
     <div
       className={className}
-      style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1)'}}
+      style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
       onClick={onClick}
     />
   );
@@ -63,7 +63,7 @@ function SampleNextArrowOrange(props) {
       return (
         <div
           className={className}
-          style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1)'}}
+          style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
           onClick={onClick}
         />
       );

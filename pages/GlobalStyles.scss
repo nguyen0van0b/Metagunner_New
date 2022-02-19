@@ -1,5 +1,5 @@
 :root{
-    --color_primary:#ff2f00;
+    --color_primary:#f15a24;
     // --color_primary:#fb1b00;
     // --color_black_down:#000;
     --color_black_down:#00000069;
@@ -21,8 +21,14 @@
 }
 html{
     scroll-behavior: smooth;
-    overflow-x:hidden;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+html::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
 img {
     width: 100%;
     height: 100%;

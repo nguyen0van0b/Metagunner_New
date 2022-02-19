@@ -21,7 +21,13 @@
         margin-top: 3%;
     }
 }
-
+@media screen and (max-width:1200) {
+    .NFTsItem{
+        &Slider{
+            width: 70%;
+        }
+    }
+}
 @media screen and (max-width:500px) {
 
     .NFTsItem{

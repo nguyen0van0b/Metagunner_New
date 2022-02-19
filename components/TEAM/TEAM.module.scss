@@ -7,10 +7,11 @@
     // background-size: cover;
     // position: relative;
     padding-top: 90px;
-    &Title{
+    &Title h2{
         // width: 26%;
         // margin: auto;
         // margin-bottom: 4%;
+        font-family: 'Russo One', sans-serif;
         text-align: center;
         font-size: 45px;
         color: var(--color_text_white);
@@ -19,7 +20,7 @@
         &Top{
             margin: auto;
             display: flex;
-            margin-bottom: 5%;
+            margin: 2% auto;
             justify-content: center;
             flex-wrap: wrap;
             &Item {
@@ -28,7 +29,7 @@
                 text-align: center;
                 display: flex;
                 &Top {
-                    width: 45%;
+                    width: 40%;
                 }
                 &Bottom {
                     margin-top: 1rem;
@@ -43,7 +44,7 @@
                     & .position{
                         font-size: 18px;
                         color: var(--color_text_white);
-                        font-style: italic;
+                        // font-style: italic;
                         margin-bottom: 25px;
                     }
                     & .background{
@@ -56,7 +57,7 @@
             }
         }
         &Bottom{
-            max-width: 1500px;
+            max-width: 1400px;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
@@ -86,7 +87,7 @@
                     & p {
                         font-size: 16px;
                         color: var(--color_text_white);
-                        font-style: italic;
+                        // font-style: italic;
                     }
             }
             }
@@ -108,6 +109,11 @@
 @media screen and (max-width: 1025px) {
     .background{
             font-size: 15px !important;
+    }
+    .Advisors {
+        &WrapperTop{
+            margin: 5% auto;
+        }
     }
 }
 

@@ -65,12 +65,6 @@
 }
 
 
-@media screen and (max-width: 1450px) {
-    .aboutWrapper {
-        width: 50%;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .aboutWrapper{
         width: 100%;
@@ -87,12 +81,29 @@
             }
         }
     }
+    .Wrapper{
+        &Video{
+            margin: 0;
+            margin-top: 150px;
+        }
+    }
     .btnMB{
         padding: 15px 40px !important;
     }
-
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
+    .aboutWrapper{
+        & h1{
+            max-width: 70%
+        }
+    }
+    .Wrapper{
+        &Btn{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 769px) {
     .aboutWrapperTitle{
         font-size: 2rem !important;
     }
