@@ -3,7 +3,7 @@ import style from "./about.module.scss";
 import clsx from "clsx";
 const urlimg5 = "/assets/SLOGAN.webp";
 const BgVideo = "/assets/Background_Video.webp";
-// const urlImgBg = "/assets/banner_Metagunner.webp";
+const urlImgBg = "/assets/Trailer.mp4";
 
 function About() {
   useEffect(() => {
@@ -52,7 +52,7 @@ function About() {
           </div>
           <div className={style.WrapperVideo}>
             <img src={BgVideo} alt="" />
-            <video //src={urlGunner}
+            <video src={urlImgBg}
               autoPlay="autoplay"
               muted="muted"
               loop="loop"></video>

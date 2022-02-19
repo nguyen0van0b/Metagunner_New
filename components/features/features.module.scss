@@ -23,7 +23,9 @@
   margin: 0;
   background: #adceed;
 }
-
+.hide{
+  display: none !important;
+}
 .features{
   &title h1{
     padding-top: 90px;
@@ -92,6 +94,28 @@
         }
         & span{
           text-align: center;
+        }
+      }
+    }}
+}
+@media screen and (max-width:600px) {
+  .features{
+    &Slider{
+      // margin-top: 20px;
+      flex-direction: column-reverse;
+      &IMG{
+        width: 75%;
+      }
+      &Title{ 
+        // width: 70%;
+        // margin-left: 0;
+        // margin-bottom: 50px;
+        // text-align: center;
+        & img{
+          max-width: 170px;
+        }
+        & span{
+          display: none;
         }
       }
     }}
