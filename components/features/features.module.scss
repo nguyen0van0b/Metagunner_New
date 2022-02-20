@@ -27,12 +27,19 @@
   display: none !important;
 }
 .features{
+  
   &title h1{
     padding-top: 90px;
     font-family: 'Russo One', sans-serif;
     color: var(--color_text_white);
     font-size: 45px !important;
     text-align: center;
+  }
+  &PC{
+    display: block;
+  }
+  &MB{
+    display: none;
   }
   &Slider{
     max-width: 1500px;
@@ -100,6 +107,12 @@
 }
 @media screen and (max-width:600px) {
   .features{
+    &PC{
+      display: none;
+    }
+    &MB{
+      display: block;
+    }
     &Slider{
       // margin-top: 20px;
       flex-direction: column-reverse;
@@ -119,4 +132,12 @@
         }
       }
     }}
+}
+
+@media screen and (max-width:400px) {
+  .features{
+    &title h1{
+      font-size: 35px !important;
+    }
+  }
 }

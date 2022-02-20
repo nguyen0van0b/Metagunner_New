@@ -5,15 +5,19 @@ import style from "./features.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const urlimgARENA = "/assets/ARENA.webp";
+const urlimgARENA_MB = "/assets/ARENA_PIC_MOBILE.webp";
 const urlARENA_INFO = "/assets/ARENA_INFO.webp";
 const urlARENA_Title = "/assets/ARENA_Title.webp";
 const urlimgCAMPAIGN = "/assets/CAMPAIGN.webp";
+const urlimgCAMPAIGN_MB = "/assets/CAMPAIGN_PIC_MOBILE.webp";
 const urlimgCAMPAIGN_INFO = "/assets/CAMPAIGN_INFO.webp";
 const urlCampaign_Title = "/assets/Campaign_Title.webp";
 const urlimgLEADERBOARD = "/assets/LEADERBOARD.webp";
+const urlimgLEADERBOARD_MB = "/assets/LEADERBOARD_PIC_MOBILE.webp";
 const urlimgLEADERBOARD_INFO = "/assets/LEADERBOARD_INFO.webp";
 const urlLeaderboard_Title = "/assets/Leaderboard_Title.webp";
 const urlimgUPGRADE = "/assets/UPGRADE.webp";
+const urlimgUPGRADE_MB = "/assets/UPGRADE_PIC_MOBILE.webp";
 const urlimgUPGRADE_INFO = "/assets/UPGRADE_INFO.webp";
 const urlUPGRADE_Title = "/assets/UPGRADE_Title.webp";
 // const urlimgBlue_Dot = "/assets/Blue_Dot.webp";
@@ -66,8 +70,13 @@ export default class AsNavFor extends Component {
         >
         <div className={style.featuresSlider}>
           <div className={style.featuresSliderIMG}>
-            <img src={urlimgCAMPAIGN_INFO} className={clsx({[style.hide]:!this.state.Campaign})} onClick={() => this.setState({ Campaign: !this.state.Campaign })} alt=""/>
-             <img src={urlimgCAMPAIGN} className={clsx({[style.hide]:this.state.Campaign})} onClick={() => this.setState({ Campaign: !this.state.Campaign })} alt=""/>
+            <div className={style.featuresMB}>
+              <img src={urlimgCAMPAIGN_INFO} className={clsx({[style.hide]:!this.state.Campaign})} onClick={() => this.setState({ Campaign: !this.state.Campaign })} alt=""/>
+              <img src={urlimgCAMPAIGN_MB} className={clsx({[style.hide]:this.state.Campaign})} onClick={() => this.setState({ Campaign: !this.state.Campaign })} alt=""/>
+            </div>
+            <div className={style.featuresPC} >
+              <img src={urlimgCAMPAIGN} alt=""/>
+            </div>
           </div>
           <div className={style.featuresSliderTitle}>
             <img src={urlCampaign_Title} alt=""/>
@@ -78,8 +87,13 @@ export default class AsNavFor extends Component {
         </div>
         <div className={style.featuresSlider}>
             <div className={style.featuresSliderIMG}>
+            <div className={style.featuresMB}>
               <img src={urlARENA_INFO} className={clsx({[style.hide]:!this.state.ARENA})} onClick={() => this.setState({ ARENA: !this.state.ARENA })} alt=""/>
-              <img src={urlimgARENA} className={clsx({[style.hide]:this.state.ARENA})} onClick={() => this.setState({ ARENA: !this.state.ARENA })} alt=""/>
+              <img src={urlimgARENA_MB} className={clsx({[style.hide]:this.state.ARENA})} onClick={() => this.setState({ ARENA: !this.state.ARENA })} alt=""/>
+              </div>
+            <div className={style.featuresPC} >
+             <img src={urlimgARENA}alt=""/>
+            </div>
             </div>
             <div className={style.featuresSliderTitle}>
               <img src={urlARENA_Title} alt=""/>
@@ -90,8 +104,13 @@ export default class AsNavFor extends Component {
         </div>
         <div className={style.featuresSlider}>
             <div className={style.featuresSliderIMG}>
+            <div className={style.featuresMB}>
               <img src={urlimgUPGRADE_INFO} className={clsx({[style.hide]:!this.state.UPGRADE})} onClick={() => this.setState({ UPGRADE: !this.state.UPGRADE })} alt=""/>
-              <img src={urlimgUPGRADE} className={clsx({[style.hide]:this.state.UPGRADE})} onClick={() => this.setState({ UPGRADE: !this.state.UPGRADE })} alt=""/>
+              <img src={urlimgUPGRADE_MB} className={clsx({[style.hide]:this.state.UPGRADE})} onClick={() => this.setState({ UPGRADE: !this.state.UPGRADE })} alt=""/>
+              </div>
+            <div className={style.featuresPC} >
+               <img src={urlimgUPGRADE} alt=""/>
+            </div>
             </div>
             <div className={style.featuresSliderTitle}>
               <img src={urlUPGRADE_Title} alt=""/>
@@ -102,8 +121,13 @@ export default class AsNavFor extends Component {
         </div>
         <div className={style.featuresSlider}>
             <div className={style.featuresSliderIMG}>
+            <div className={style.featuresMB}>
               <img src={urlimgLEADERBOARD_INFO} className={clsx({[style.hide]:!this.state.LEADERBOARD})} onClick={() => this.setState({ LEADERBOARD: !this.state.LEADERBOARD })} alt=""/>
-              <img src={urlimgLEADERBOARD}  className={clsx({[style.hide]:this.state.LEADERBOARD})} onClick={() => this.setState({ LEADERBOARD: !this.state.LEADERBOARD })} alt=""/>
+              <img src={urlimgLEADERBOARD_MB}  className={clsx({[style.hide]:this.state.LEADERBOARD})} onClick={() => this.setState({ LEADERBOARD: !this.state.LEADERBOARD })} alt=""/>
+              </div>
+            <div className={style.featuresPC} >
+              <img src={urlimgLEADERBOARD} alt=""/>
+            </div>
             </div>
             <div className={style.featuresSliderTitle}>
               <img src={urlLeaderboard_Title} alt=""/>

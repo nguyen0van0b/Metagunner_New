@@ -20,23 +20,24 @@ function Footer(){
                     
                 </div>
                 <div className={style.footerMenu}>
-                    <div className={style.footerMenuAbout}>
+                    <div className={style.footerMenuWrapper}>
                         <h2>ABOUT</h2>
                         <img src={imgBottom_menu} alt=""/>
-                        <ul>
-                            <li><a href="#features">FEATURES</a></li>
-                            <li><a href="#NFTsItem">NFT CARD</a></li>
-                            <li><a href="#character">CHARACTER</a></li>
-                        </ul>
+                        <div className={style.footerMenuAbout}>
+                            <ul>
+                                <li><a href="#features">FEATURES</a></li>
+                                <li><a href="#NFTsItem">NFT CARD</a></li>
+                                <li><a href="#character">CHARACTER</a></li>
+                            </ul>
+                        </div>
+                        <div className={style.footerMenuAbout}>
+                            <ul>
+                                <li><a href="#roadmap">ROADMAP</a></li>
+                                <li><a href="#tokenomics">TOKENOMICS</a></li>
+                                <li><a href="#TEAM">TEAM</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className={style.footerMenuAbout}>
-                        <ul>
-                            <li><a href="#roadmap">ROADMAP</a></li>
-                            <li><a href="#tokenomics">TOKENOMICS</a></li>
-                            <li><a href="#TEAM">TEAM</a></li>
-                        </ul>
-                    </div>
-                    
                     <div className={style.footerMenuFAQ}>
                         <h2>FAQ</h2>
                         <img src={imgBottom_menu} alt=""/>

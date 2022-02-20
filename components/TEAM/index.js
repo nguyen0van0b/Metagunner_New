@@ -30,10 +30,13 @@ function Advisors(){
                         </div>
                         <div className={style.position}>Founder/Chief Executive Officer</div>
                         <div className={style.background}>
-                        Founder of KOG Studio <br></br><br></br>
-                        Chief Operating Officer of BEUS <br></br><br></br>
-                        4+ years of experience in E-commerce in the global retail market<br></br><br></br>
-                        7+ years of experience in E-business and Digital Media</div>
+                            <ul>
+                                <li>Founder of KOG Studio</li>
+                                <li>Chief Operating Officer of BEUS</li>
+                                <li>4+ years of experience in E-commerce in the global retail market</li>
+                                <li>7+ years of experience in E-business and Digital Media</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
@@ -46,10 +49,13 @@ function Advisors(){
                         </div>
                         <div className={style.position}>Product Lead/Game Designer</div>
                         <div className={style.background}>
-                        Chief Technology Officer of BEUS <br></br><br></br>
-                        Senior Game Developer at X-Game <br></br><br></br>
-                        7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvna.<br></br><br></br>
-                        5+ years of experience managing software product outsourcing globally, especially in Japan.</div>
+                            <ul>
+                                <li>Chief Technology Officer of BEUS</li>
+                                <li>Senior Game Developer at X-Game</li>
+                                <li>7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvna.</li>
+                                <li>5+ years of experience managing software product outsourcing globally, especially in Japan.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

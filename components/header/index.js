@@ -14,6 +14,7 @@ const imgFacebook = "/assets/facebook.svg";
 function Header() {
   const [show, setShow] = useState(false);
   const [showMB, setShowMB] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -122,10 +123,16 @@ function Header() {
             </nav>
           </div>
           <button
-            className={style.menu_mobile_icon}
-            onClick={() => setShowMB(!showMB)}
+            className={clsx(style.menu_mobile_icon,{
+              [style.change]: menu,
+            })}
+            onClick={() => {setShowMB(!showMB);setMenu(!menu)}}
           >
-            <img src={urlBtn} alt="" />
+            {/* <img src={urlBtn} alt="" /> */}
+            
+            <div className={style.bar1}></div>
+            <div className={style.bar2}></div>
+            <div className={style.bar3}></div>
           </button>
         </div>
         <div className={style.headerWrapperSocial} id="Social">

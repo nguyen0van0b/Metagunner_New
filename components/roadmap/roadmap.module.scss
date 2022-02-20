@@ -82,11 +82,23 @@
         &Title{
             top: 80px;
             width: 60%;
+            & h2{
+                font-size: 35px;
+            }
         }
         &Wrapper{
-            margin-top: 200px;
+            margin-top: 100px;
             &Item{
                 width: 80%;
+                & h2{
+                    font-size: 35px;
+                }
+                & img{
+                    width: 70%;
+                }
+                & ul{
+                    margin-top: 20px;
+                }
             }
         }
     }

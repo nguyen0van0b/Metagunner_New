@@ -47,7 +47,12 @@ body {
     background-attachment: fixed;
     background-size: 100vw 100vh;
 }
-
+div {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
 video {
     width: 100%;
     height: 100%;
@@ -252,9 +257,15 @@ ul.slick-dots {
 //     background-size: cover !important;
 // }
 
-@media screen and (max-width: 1000px) {
-    .slick-next,
-    .slick-prev{
-        display: none !important
-    }
+// @media screen and (max-width: 600px) {
+//     .slick-next,
+//     .slick-prev{
+//         display: none !important
+//     }
+// }
+@media screen and (max-width: 500px) {
+    ul.slick-dots  > li {
+          width: 25px;
+          height: 10px;
+        }
 }

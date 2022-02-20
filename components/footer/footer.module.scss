@@ -62,13 +62,19 @@
         align-items:flex-end;
         padding: 4%;
         padding-left: 0;
-        &About{
-            width: 20%;
+        &Wrapper{
+            width: 35%;
             & img{
+                display: block;
                 width: 52px;
                 margin-bottom: 20px;
                 margin-top: 10px;
             }
+        }
+        &About{
+            width: 50%;
+            display: inline;
+            float: left;
             & h2{
                 // margin-bottom: 20px;
                 font-size: 20px;
@@ -147,40 +153,96 @@
     .footer {
         flex-direction:column;
         align-items:center;
+        &Wrapper {
+            &Logo {
+                left: 0;
+                width: 90%;
+            }
+        }
         &Menu{
             width: 100%;
+            &Wrapper{
+                width: 50%;
+            }
+            &FAQ{
+                width: 50%;
+            }
         }
+    }
+}
+@media screen and (max-width:750px) {
+    .footer {
+        &Container{
+            flex-direction: column;
+        }
+        &Wrapper{
+            width: 100%;
+            &Logo{
+                position: static;   
+                width: 50%;
+                margin: auto;
+                margin-top: -10%;
+                margin-bottom: -10%;
+            }
+        }
+        &Menu{
+            width: 100%;
+            padding: 4%;
+            &Wrapper{
+                width: 50%;
+            }
+            &FAQ{
+                width: 50%;
+            }
+        }
+    }
+    .footerBottomSocial img{
+        width: 6vw;
+        height: 6vw;
     }
 }
 @media screen and (max-width:500px) {
     .footerMenu{
+        flex-direction: column;
         &FAQ ul li,
         &About ul li{
            font-size: 15px;
             }
-        }
-    .footerWrapper{
-        &Logo {
-        width: 80%;
-        }
-        &Social{ 
-                & img {
-                width: 7vw;
-                height: 7vw;
+        &Wrapper{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 40px;
+            & img{
+                margin: auto;
+                margin-bottom: 20px;
+                margin-top: 10px;
             }
+        }  
+        &FAQ{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }  
+    }
+    .footerWrapper{
+        width: 100%;
+        &Logo {
+            position: static;
+            width: 60%;
+            margin-top: -10%;
         }
+    }
+    .footerBottomSocial img{
+        width: 9vw;
+        height: 9vw;
     }
 }
 
 @media screen and (max-width:400px) {
-    .footerWrapper{
-        width: 80%;
-        &Social{ 
-                & img {
-                width: 7vw;
-                height: 7vw;
-                margin: 5px;
-            }
-        }
+    .footerBottomSocial img{
+        width: 12vw;
+        height: 12vw;
+        margin: 10px;
     }
 }

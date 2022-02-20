@@ -1,4 +1,6 @@
-
+.TextMB{
+    display: none;
+}
 .tokenomics{
     overflow:hidden;
     padding-top: 90px;
@@ -79,42 +81,35 @@
         }
     }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 650px) {
+    .TextMB{
+        display: block;
+    }
+    .TextPC{
+        display: none;
+    }
     .tokenomics {
+        & h2{
+            font-size: 35px;
+        }
         &Wrapper {
-            &Img {
-                margin-top: 70px;
-                width: 104%;
-            }
-            &Title {
-                width: 60%;
-                top: -5%;
-            }
-            &Content {
-                width: 100%;
-                padding: 15%;
-                &List {
-                    margin-bottom: 0;
-                    & li span:first-child {
-                        width: 70%;
-                    }
-                    & li p{
-                        font-size: 1rem;
-                    }
-                }
+           display: inline-block;
+        }
+        &PieChart {
+            width: 90%;
+            &img{
+                width: 90%;
+                margin: 5%;
             }
         }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .tokenomicsWrapperContent p{
-        width: 120%;
-        margin-left: -10%;
-        font-size: 1.1rem;
-    }
-    .tokenomicsWrapperContentList>li>p{
-        padding-left: 8%;
-        font-size: 0.9rem;
+        &Text {
+            margin-top: 40px;
+            width: 70%;
+            & img{
+                width: 90%;
+                margin-left: 7%;
+            }
+        }
     }
 }

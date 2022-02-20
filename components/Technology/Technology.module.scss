@@ -34,10 +34,13 @@
             width: 80%;
             margin: auto;
             margin-bottom: 4%;
+            & h2{
+                font-size: 35px;
+            }
         }
     &Wrapper {
         & * {
-            width: 60%;
+            width: 40%;
         }
     }
     }

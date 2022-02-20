@@ -3,6 +3,7 @@ import style from './tokenomics.module.scss'
 // const urlTitle = '/assets/Tokenomics_Metagunner.webp'
 const urlPIE_CHART = '/assets/PIE_CHART.webp'
 const urlTEXT = '/assets/TEXT_AND_NUMS.webp'
+const urlTEXTMB = '/assets/TEXT_AND_NUMS_MB.webp'
 
 function Tokenomics(){
     return(
@@ -29,8 +30,6 @@ function Tokenomics(){
                             <li><span>Liquidity:</span><span>5%</span></li>
                             <li><span>Airdrop:</span><span>0.5%</span></li>
                             <li><span>Reserve:</span><span>5%</span></li>
-                            
-                            
                         </ul>
                     </div>
                 </div>
@@ -40,7 +39,8 @@ function Tokenomics(){
                     <img src={urlPIE_CHART}></img>
                 </div>
                 <div className={style.tokenomicsText}>
-                    <img src={urlTEXT}></img>
+                    <img src={urlTEXT} className={style.TextPC}></img>
+                    <img src={urlTEXTMB} className={style.TextMB}></img>
                 </div>
             </div>
         </section>

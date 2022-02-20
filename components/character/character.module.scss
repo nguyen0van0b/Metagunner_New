@@ -139,41 +139,40 @@
         }
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .character{
+        
         // display: none;
+        & h1{
+            font-size: 35px;
+        }
         &title{
-            width: 30%;
+            width: 90%;
             top:5px;
-            // & p{
-            //     display: none;
-            //     font-size: 0.8rem;
-            //     width: 230%;
-            //     margin-left: -65%;
-            //     margin-top: -5%;
-            // }
         }
         &FirstSlider{
-            width: 60%;
+            width: 80%;
+            top: 27%;
         }
         &SecondSlider{
-            flex-direction: column;
+            width: 100%;
+            display: inline-block !important;
+            text-align: center;
             & img{
                 order: 1;
                 width: 80% !important;
             }
             &Title{
-                font-size: 0.6rem;
-                width: 48% !important;
-                top: 20%;
-                left: 15%;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.753);
-                border-radius: 20px;
+                width: 100% !important;
+                margin-top: 30px;
                 & h2{
                     margin-bottom: 5px;
                 }
             }
         }
+    }
+    .Soldier{
+        width: 80%;
+        margin: auto;
     }
 }

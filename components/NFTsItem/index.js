@@ -79,6 +79,49 @@ function SampleNextArrowOrange(props) {
         />
       );
     }
+
+    function SampleNextArrowBlueMB(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{...style,position: 'absolute',top: '50%',right: '-15%',width: '50px',height: '50px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
+          onClick={onClick}
+        />
+      );
+    }
+    
+    function SamplePrevArrowBlueMB(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{position: 'absolute',top: '50%',left: '-15%',zIndex:1,width: '50px',height: '50px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
+          onClick={onClick}
+        />
+      );
+    }
+    function SampleNextArrowOrangeMB(props) {
+          const { className, style, onClick } = props;
+          return (
+            <div
+              className={className}
+              style={{...style,position: 'absolute',top: '50%',right: '-15%',width: '50px',height: '50px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
+              onClick={onClick}
+            />
+          );
+        }
+        
+        function SamplePrevArrowOrangeMB(props) {
+          const { className, style, onClick } = props;
+          return (
+            <div
+              className={className}
+              style={{position: 'absolute',top: '50%',left: '-15%',zIndex:1,width: '50px',height: '50px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
+              onClick={onClick}
+            />
+          );
+        }
 export default class AsNavFor extends Component {
    render() {
     const settingsBlue = {
@@ -106,14 +149,18 @@ export default class AsNavFor extends Component {
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                initialSlide: 2
+                initialSlide: 2,
+                nextArrow: <SampleNextArrowBlueMB />,
+                prevArrow: <SamplePrevArrowBlueMB />,
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                nextArrow: <SampleNextArrowBlueMB />,
+                prevArrow: <SamplePrevArrowBlueMB />,
               }
             }
           ]
@@ -143,14 +190,18 @@ export default class AsNavFor extends Component {
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                initialSlide: 2
+                initialSlide: 2,
+                nextArrow: <SampleNextArrowOrangeMB />,
+                prevArrow: <SamplePrevArrowOrangeMB />,
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                nextArrow: <SampleNextArrowOrangeMB />,
+                prevArrow: <SamplePrevArrowOrangeMB />,
               }
             }
           ]
