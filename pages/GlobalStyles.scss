@@ -264,6 +264,9 @@ ul.slick-dots {
 //     }
 // }
 @media screen and (max-width: 500px) {
+    body {
+        background-image: url("../public/assets/BACKGROUND-MOBILE.webp");
+    }
     ul.slick-dots  > li {
           width: 25px;
           height: 10px;
