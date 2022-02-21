@@ -86,10 +86,14 @@ export default class AsNavFor extends Component {
             </div>
           </div>
           <div className={style.featuresSliderTitle}>
+          <div className={style.featuresSliderTitleimg}>
             <img src={urlCampaign_Title} alt=""/>
+          </div>
+          <div className={style.featuresSliderTitlecap}>
             <p>
               This mode is the main feature of MetaGunner, where players battle alien monsters to receive valuable rewards. Players embark on exciting adventures and play as soldiers armed with weapons to fight monsters in deadly lands.
             </p>
+          </div>
           </div>
         </div>
         <div className={style.featuresSlider}>
@@ -103,10 +107,14 @@ export default class AsNavFor extends Component {
             </div>
             </div>
             <div className={style.featuresSliderTitle}>
+          <div className={style.featuresSliderTitleimg}>
               <img src={urlARENA_Title} alt=""/>
+               </div>
+          <div className={style.featuresSliderTitlecap}>
               <p>
                 Arena Mode consists of two different sub-modes: Battle Royale and Team Fire. Battle Royale is where soldiers join in the deadliest battles to determine the greatest warrior. TeamFire is the place for teams of five to combat and decide which team is the strongest of all.
               </p>
+            </div>
             </div>
         </div>
         <div className={style.featuresSlider}>
@@ -120,10 +128,14 @@ export default class AsNavFor extends Component {
             </div>
             </div>
             <div className={style.featuresSliderTitle}>
+          <div className={style.featuresSliderTitleimg}>
               <img src={urlUPGRADE_Title} alt=""/>
+               </div>
+          <div className={style.featuresSliderTitlecap}>
               <p>
               {`Upgrade is a feature that allows players to increase the level and attribute points of weapons. Players need to own an upgrade item (Wrench) and pay a small fee corresponding to the weapon's level to upgrade. Depending on the level, the upgrade has different success rates.`}
               </p>
+            </div>
             </div>
         </div>
         <div className={style.featuresSlider}>
@@ -137,10 +149,14 @@ export default class AsNavFor extends Component {
             </div>
             </div>
             <div className={style.featuresSliderTitle}>
+          <div className={style.featuresSliderTitleimg}>
               <img src={urlLeaderboard_Title} alt=""/>
+               </div>
+          <div className={style.featuresSliderTitlecap}>
               <p>
                 The leaderboard is a ranking system in which players are assessed based on their achievements in MetaGunner. Leaderboard helps increase competition among players and create positive challenges, forcing them to play hard to gain significant achievements.
               </p>
+            </div>
             </div>
         </div>
         </Slider>
