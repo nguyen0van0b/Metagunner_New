@@ -38,28 +38,6 @@ function Header() {
   const handleScrollTop = () =>{
       window.scrollTo(0, 0)
   };
-  // useEffect(()=>{
-  //     const handleResize = ()=>{
-  //         if(window.innerWidth>1000){
-  //             var prevScrollpos = window.pageYOffset;
-  //             window.onscroll = function() {
-  //                 var currentScrollPos = window.pageYOffset;
-  //                 if (prevScrollpos > currentScrollPos & window.innerWidth<1000) {
-  //                     console.log(window.innerWidth)
-  //                     document.getElementById("navbar").style.top = "0";
-  //                     document.getElementById("navbarContainer").style.top = "0";
-  //                     document.getElementById("Social").style.top = "50%";
-  //                 } else {
-  //                     document.getElementById("navbar").style.top = "-260px";
-  //                     document.getElementById("navbarContainer").style.top = "-260px";
-  //                     document.getElementById("Social").style.top = "calc(50% + 260px)";
-  //                 }
-  //             prevScrollpos = currentScrollPos;
-  //             }
-  //         }
-  //     }
-  //     window.addEventListener('resize',handleResize)
-  // },[])
 
   return (
     <>
@@ -92,13 +70,12 @@ function Header() {
                   <a href="#features">FEATURES</a>
                   <img src={urlBottomMenu} alt=""/>
                 </li>
-                {/* <li><a href="#NFTsItem">NFTs Item</a></li> */}
                 <li>
                   <a href="#NFTsItem">NFT CARD</a>
                   <img src={urlBottomMenu} alt=""/>
                 </li>
                 <li>
-                  <a href="#character">CHARACTER</a>
+                  <a href="#character">SOLDIER</a>
                   <img src={urlBottomMenu} alt=""/>
                 </li>
                 <li>
@@ -119,6 +96,44 @@ function Header() {
                   </a>
                   <img src={urlBottomMenu} alt=""/>
                 </li>
+                <div className={style.headerWrapperSocialMB} id="Social">
+                    <a
+                      href="https://t.me/MetaGunnerChannel"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={imgTelegram} alt="" />
+                    </a>
+                    <a
+                      href="https://discord.gg/3dNjuDMjcB"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={imgDiscord} alt="" />
+                    </a>
+                    <a
+                      href="https://twitter.com/MetaGunner_io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={imgTwitter} alt="" />
+                    </a>
+                    {/* <a href="/" target="_blank" rel="noopener noreferrer"><img src={imgGithub} alt=""/></a>  */}
+                    <a
+                      href="https://metagunner.medium.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={imgMedium} alt="" />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/Meta-Gunner-104600948766397"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={imgFacebook} alt="" />
+                    </a>
+                </div>
               </ul>
             </nav>
           </div>

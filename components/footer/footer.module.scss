@@ -210,19 +210,19 @@
             }
         &Wrapper{
             width: 80%;
-            margin: auto;
-            text-align: center;
+            margin: auto 10%;
+            text-align: left;
             margin-bottom: 40px;
-            & img{
-                margin: auto;
-                margin-bottom: 20px;
-                margin-top: 10px;
-            }
+            // & img{
+            //     margin: auto;
+            //     margin-bottom: 20px;
+            //     margin-top: 10px;
+            // }
         }  
         &FAQ{
             width: 80%;
             margin: auto;
-            text-align: center;
+            text-align: left;
         }  
     }
     .footerWrapper{

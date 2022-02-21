@@ -25,16 +25,16 @@ function Footer(){
                         <img src={imgBottom_menu} alt=""/>
                         <div className={style.footerMenuAbout}>
                             <ul>
-                                <li><a href="#features">FEATURES</a></li>
-                                <li><a href="#NFTsItem">NFT CARD</a></li>
-                                <li><a href="#character">CHARACTER</a></li>
+                                <li><a href="#features">Fearures</a></li>
+                                <li><a href="#NFTsItem">NFT Card</a></li>
+                                <li><a href="#character">Soldier</a></li>
                             </ul>
                         </div>
                         <div className={style.footerMenuAbout}>
                             <ul>
-                                <li><a href="#roadmap">ROADMAP</a></li>
-                                <li><a href="#tokenomics">TOKENOMICS</a></li>
-                                <li><a href="#TEAM">TEAM</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                                <li><a href="#tokenomics">Tokenomics</a></li>
+                                <li><a href="#TEAM">Team</a></li>
                             </ul>
                         </div>
                     </div>

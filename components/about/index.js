@@ -4,6 +4,7 @@ import clsx from "clsx";
 const urlimg5 = "/assets/SLOGAN.webp";
 const BgVideo = "/assets/Background_Video.webp";
 const urlImgBg = "/assets/Trailer.mp4";
+const urlimgAblout = "/assets/img_Ablout.webp";
 
 function About() {
   useEffect(() => {
@@ -29,7 +30,7 @@ function About() {
           </h1>
           <div className={style.WrapperBtn}>
               <a
-            href="https://drive.google.com/file/d/1VnfYeY06nvHLtG-8IvbJEX9avpFSyO4l/view"
+            href="https://docsend.com/view/6uxnyvc62bd6pya6"
             className={clsx("btn btnPrimary", style.btnMB)}
             target="_blank"
             rel="noreferrer"
@@ -46,16 +47,12 @@ function About() {
             data-aos="zoom-in"
             data-aos-delay="400"
             id="playnow"
-          >
-            Play Now
-              </a>
+          >Play Now</a>
           </div>
           <div className={style.WrapperVideo}>
             <img src={BgVideo} alt="" />
-            <video src={urlImgBg}
-              autoPlay="autoplay"
-              muted="muted"
-              loop="loop"></video>
+            <img src={urlimgAblout} className={style.WrapperVideoimgmb} alt=""/>
+            <video src={urlImgBg} controls autoPlay='autoplay' muted='muted'></video>
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@
         font-size: 45px;
         color: var(--color_text_white);
         text-align: center;
+        font-weight: 100;
     }
     &Wrapper{
         margin: 100px auto;
@@ -97,8 +98,8 @@
            display: inline-block;
         }
         &PieChart {
-            width: 90%;
-            &img{
+            width: 100%;
+            & img{
                 width: 90%;
                 margin: 5%;
             }

@@ -5,8 +5,8 @@
     transition: top 1s;
 }
 .bar1, .bar2, .bar3 {
-    width: 45px;
-    height: 6px;
+    width: 34px;
+    height: 5px;
     background-color: var(--color_primary);
     margin: 6px 0;
     transition: 0.4s;
@@ -76,6 +76,9 @@
         right: 10px;
         width: 2vw;
         transform: translate(0,50%);
+        &MB{
+            display: none;
+        }
     }
 }
 
@@ -128,8 +131,6 @@
     flex-direction: column;
     justify-content: flex-start;
     background: #000000cc;
-    border-left: 2px solid var(--color_primary);
-    border-bottom: 2px solid var(--color_primary);
     & li:first-child {
         margin-top: 20px;
     }
@@ -147,8 +148,8 @@
 }
 .menu_mobile_icon {
     position: absolute;
-    right: 10px;
-    top: 25px;
+    right: 25px;
+    top: 20px;
     background: none;
     display: none;
     & img{
@@ -180,41 +181,60 @@
         }
         }
     }
-    .headerContainer{
-        &Down{
-            height: auto;
-        }
-        &Menu{
-            width: 40%;
-            height: auto;
-            display: none;
+    .header{
+        background-color: #00000000;
+        &Container{
+            &Down{
+                height: auto;
+            }
+            &Menu{
+                width: 100%;
+                margin-left: -110px;
+                height: auto;
+                display: none;
+            }
         }
     }
     .headerWrapperSocial{
         width: 4vw;
+        display: none;
+        &MB{
+            display: flex !important;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            & a{
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+            }
+        }
     }
 }
 @media screen and (max-width: 650px) {
     .headerContainerMenu{
-        width: 40%;
-        margin-right: 70px;
         height: auto;
     }
 }
 @media screen and (max-width: 500px) {
-    .headerContainerLogo img{
-        width: 110px;
-        height: 110px;
-    }
+    .headerContainerLogo {
+        margin-top: 0;
+        margin-left: 10px;
+        & img{
+        width: 80px !important;
+        height: 80px !important;
+    }   }
     .headerWrapperSocial{
         top: 100%;
         width: 8vw;
+        &MB {
+            margin-bottom: 20px;
+            &a{
+                width: 40px;
+                height: 40px;
+                margin: 5px;
+            }
+        }
     }
-    .headerContainerMenu{
-        width: 60%;
-        margin-right: 70px;
-        margin-top: 10px;
-        height: auto;
-        text-align: center;
-    }
+    
 }

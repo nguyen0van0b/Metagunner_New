@@ -61,7 +61,7 @@
 }
 @media screen and (max-width: 600px) {
     .Vidwrapper{
-        height: 100%;
+        height: 70vh;
         & .banner_PC{
             display: none;
             & img{
@@ -71,7 +71,7 @@
         & .banner_MB{
             display: block;
             position: relative;
-            height: 100vh;
+            height: 70vh;
             & img{
                 position: absolute;
                 top: 0;
@@ -79,23 +79,40 @@
                 display: block;
             }
             & .image1{
-                height: 100vh;
+                height: 70vh;
                 width: 100%;
             }
             & .image2{
-                height: 370px;
-                width: 370px;
+                height: 30%;
+                width: auto;
                 transform: translate(-50%,-50%);
                 left: 50%;
-                top: 40%;
+                top: 25%;
             }
             & .image3{
                 height: auto;
-                width: 100%;
-                bottom: 0;
+                width: 180%;
+                bottom: 0px;
                 top: auto;
+                left: -40%;
                 z-index: 9;
-                transform: translateY(30%);
+                transform: translateY(25%);
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .Vidwrapper{
+        & .banner_MB{
+            & .image3{
+                height: auto;
+                width: 200%;
+                bottom: 0px;
+                top: auto;
+                left: -50%;
+                z-index: 9;
+                transform: translateY(25%);
             }
         }
 

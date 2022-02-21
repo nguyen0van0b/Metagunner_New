@@ -34,6 +34,7 @@
     color: var(--color_text_white);
     font-size: 45px !important;
     text-align: center;
+    font-weight: 100;
   }
   &PC{
     display: block;
@@ -66,8 +67,11 @@
         max-height: 92px;
         margin-bottom: 45px;
       }
-      & span{
+      & p{
         line-height: 1.8;
+        text-align: justify;
+        font-weight: 200;
+        font-size: 18px;
       }
     }
   }
@@ -94,12 +98,12 @@
       &Title{ 
         width: 70%;
         margin-left: 0;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         text-align: center;
         & img{
           margin: 20px auto;
         }
-        & span{
+        & p{
           text-align: center;
         }
       }
@@ -117,23 +121,23 @@
       // margin-top: 20px;
       flex-direction: column-reverse;
       &IMG{
-        width: 75%;
+        width: 90%;
       }
       &Title{ 
-        // width: 70%;
-        // margin-left: 0;
-        // margin-bottom: 50px;
-        // text-align: center;
         & img{
           max-width: 170px;
         }
-        & span{
+        & p{
           display: none;
         }
       }
     }}
 }
-
+@media screen and (max-width:500px) {
+  .featuresSliderIMG{
+    width: 95%;
+  }
+}
 @media screen and (max-width:400px) {
   .features{
     &title h1{

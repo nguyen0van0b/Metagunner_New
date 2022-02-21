@@ -4,7 +4,6 @@ import About from "../components/about";
 import Features from "../components/features";
 import NFTsItem from "../components/NFTsItem";
 import Character from "../components/character";
-import CharacterMB from "../components/characterMB";
 import Basecamp from "../components/basecamp";
 import Roadmap from "../components/roadmap";
 import Tokenomics from "../components/tokenomics";
@@ -52,8 +51,6 @@ function Home() {
       <Features />
       <NFTsItem />
      <Character /> 
-     {/* {show && } */}
-      {/* {!show && <CharacterMB />} */}
       <Basecamp />
       <Roadmap />
       <Tokenomics />
