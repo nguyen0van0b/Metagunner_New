@@ -131,7 +131,7 @@
 }
 @media screen and (max-width: 600px) {
 .aboutWrapper{
-    padding: 120px 10%;
+    padding: 200px 10%;
         &>img{
             width: 100%;
         }
@@ -161,5 +161,16 @@
     }
     .btnMB{
         padding: 26px 65px!important;
+    }
+}
+@media screen and (max-width: 450px) {
+    .aboutWrapper{
+        padding: 100px 10%
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .aboutWrapper{
+        padding: 10px 10%
     }
 }

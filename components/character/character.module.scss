@@ -34,7 +34,7 @@
         letter-spacing: 3px;
     }
     &FirstSlider{
-        width: 35%;
+        width: 50%;
         margin: auto;
         position: absolute!important;
         top: 25%;
@@ -45,6 +45,7 @@
         }
         & img{
             filter: grayscale(100%);
+            width: 70%;
         }
     }
     &SecondSlider{ 
@@ -86,6 +87,7 @@
     &Wrapper{
         position: relative;
         z-index: 1;
+        animation: animationSoldier 4s infinite linear 2s;
     }
     &Bottom{
         position: absolute;
@@ -94,10 +96,26 @@
         z-index: 0;
     }
 }
+
+@keyframes animationSoldier {
+    0% {
+        top: 0;
+    }
+    50%{
+        top: -15px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .character{
         &FirstSlider{
-            width: 50%;
+            width: 70%;
+            & img{
+                width: 100%;
+            }
         }
         &SecondSlider{
             &Title{

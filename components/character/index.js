@@ -107,7 +107,7 @@ export default class AsNavFor extends Component {
         >
           <div className={style.characterSecondSlider}>
             <div className={style.Soldier}>
-              <img src={urlDESTROYER} onClick={()=>{console.log('phuocnek');}} className={style.SoldierWrapper}></img>
+              <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
               <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
             </div>
             <div className={style.characterSecondSliderTitle}>

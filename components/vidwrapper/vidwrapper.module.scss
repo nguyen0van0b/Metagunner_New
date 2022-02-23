@@ -78,43 +78,46 @@
                 left: 0;
                 display: block;
             }
-            & .image1{
-                height: 70vh;
+            // & .image1{
+            //     height: 70vh;
+            //     width: 100%;
+            // }
+            // & .image2{
+            //     height: 30%;
+            //     width: auto;
+            //     transform: translate(-50%,-50%);
+            //     left: 50%;
+            //     top: 25%;
+            // }
+            // & .image3{
+            //     height: auto;
+            //     width: 180%;
+            //     bottom: 0px;
+            //     top: auto;
+            //     left: -40%;
+            //     z-index: 9;
+            //     transform: translateY(25%);
+            // }
+            & .image3{
+                height: auto;
                 width: 100%;
-            }
-            & .image2{
-                height: 30%;
-                width: auto;
-                transform: translate(-50%,-50%);
-                left: 50%;
-                top: 25%;
-            }
-            & .image3{
-                height: auto;
-                width: 180%;
-                bottom: 0px;
-                top: auto;
-                left: -40%;
+                top: 0;
                 z-index: 9;
-                transform: translateY(25%);
             }
         }
 
     }
 }
-@media screen and (max-width: 500px) {
-    .Vidwrapper{
-        & .banner_MB{
-            & .image3{
-                height: auto;
-                width: 200%;
-                bottom: 0px;
-                top: auto;
-                left: -50%;
-                z-index: 9;
-                transform: translateY(25%);
-            }
-        }
+// @media screen and (max-width: 500px) {
+//     .Vidwrapper{
+//         & .banner_MB{
+//             & .image3{
+//                 height: auto;
+//                 width: 100%;
+//                 top: 0;
+//                 z-index: 9;
+//             }
+//         }
 
-    }
-}
+//     }
+// }

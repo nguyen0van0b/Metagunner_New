@@ -49,6 +49,7 @@
     margin: auto;
     margin-top: 90px;
     margin-bottom: 50px;
+    height: 60vh;
     &IMG{
       width: 50%;
       & img {
@@ -62,10 +63,19 @@
       width: 37%;
       color: var(--color_text_white);
       margin-left: 5%;
+      height: 100%;
+      &img{
+        height: 50%;
+        position: relative;
+      }
+      &cap{
+        height: 50%;
+      }
       & img{
-        max-width: 264px;
-        max-height: 92px;
-        margin-bottom: 45px;
+        position: absolute;
+        bottom: 30px;
+        max-width: 266px;
+        max-height: 93px;
       }
       & p{
         line-height: 1.8;
@@ -83,11 +93,23 @@
       &Title{
         width: 50%;
       }
-    }}
+    }
+  }
 }
 @media screen and (max-width:1000px) {
   .featuresSlider{
+      align-items: flex-start;
       width: 90% !important;
+      height: 100%;
+      &Title{
+        &img{
+          position: static;
+          margin-bottom: 30px;
+        }
+        & img{
+          position: static;
+        }
+      }
     }
 }
 @media screen and (max-width:800px) {
@@ -95,10 +117,11 @@
     &Slider{
       margin-top: 20px;
       flex-direction: column-reverse;
+      align-items: center;
       &Title{ 
         width: 70%;
         margin-left: 0;
-        margin-bottom: 0;
+        margin-bottom: 20px;
         text-align: center;
         & img{
           margin: 20px auto;

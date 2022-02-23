@@ -147,14 +147,28 @@ video {
     font-weight: 700;
     font-size: 30px;
     &Primary {
-    background-image: url('../public/assets/button_about_Metagunner.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background-image: url('../public/assets/button_about_Metagunner.webp');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background: #1F1E1E;
+        border-radius: 21px;
+        border: 2px solid #F15A24;
+        &:hover{
+            border: 2px solid #fff;
+            color: #fff;
+        }
     }
     &Secondary {
-        background-image: url('../public/assets/button_about_Metagunner.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+        // background-image: url('../public/assets/button_about_Metagunner.webp');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background: #1F1E1E;
+        border-radius: 21px;
+        border: 2px solid #F15A24;
+        &:hover{
+            border: 2px solid #fff;
+            color: #fff;
+        }
     }
 }
 
