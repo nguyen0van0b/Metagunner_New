@@ -1,116 +1,126 @@
-.TextMB{
-    display: none;
-}
+// .tokenomics{
+//     overflow:hidden;
+//     padding-top: 90px;
+//     & h2{
+//         font-family: 'Russo One', sans-serif;
+//         font-size: 45px;
+//         color: var(--color_text_white);
+//         text-align: center;
+//         font-weight: 100;
+//     }
+//     &Wrapper{
+//         margin: 100px auto;
+//         display: flex;
+//     }
+//     &PieChart{
+//         display: inline-block;
+//         width: 55%;
+//         & img{
+//             width: 55%;
+//             height: auto;
+//             float: right;
+//             margin-right: 100px;
+//         }
+//     }
+//     &Text{
+//         display: inline-block;
+//         width: 45%;
+//         & img{
+//             width: 45%;
+//             height: auto;
+//             margin-left: 30px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 1025px) {
+//     .tokenomics{
+//         &PieChart{
+//             & img{
+//                 width: 70%;
+//             }
+//         }
+//         &Text{
+//             & img{
+//                 width: 80%;
+//             }
+//         }
+//     }
+// }
+//     @media screen and (max-width: 1000px) {
+//         .tokenomics{
+//             &PieChart{
+//                 & img{
+//                     margin-right: 50px;
+//                     width: 80%;
+//                 }
+//             }
+//             &Text{
+//                 & img{
+//                     width: 90%;
+//                 }
+//             }
+//         }
+// }
+// @media screen and (max-width: 850px) {
+//     .tokenomics {
+//         &Wrapper {
+//             // flex-direction:column;
+//             margin: 50px auto;
+//         }
+//         &PieChart{
+//             width: 65%;
+//             margin: auto;
+//         }
+//         &Text {
+//             &img{
+//                 width: 100%;
+//                 margin-left: 0;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 650px) {
+//     .TextMB{
+//         display: block;
+//     }
+//     .TextPC{
+//         display: none;
+//     }
+//     .tokenomics {
+//         & h2{
+//             font-size: 35px;
+//         }
+//         &Wrapper {
+//            display: inline-block;
+//         }
+//         &PieChart {
+//             width: 100%;
+//             & img{
+//                 width: 90%;
+//                 margin: 5%;
+//             }
+//         }
+//         &Text {
+//             margin-top: 40px;
+//             width: 70%;
+//             & img{
+//                 width: 90%;
+//                 margin-left: 7%;
+//             }
+//         }
+//     }
+// }
 .tokenomics{
-    overflow:hidden;
-    padding-top: 90px;
-    & h2{
+    &Total h2{
         font-family: 'Russo One', sans-serif;
+        text-align: center;
         font-size: 45px;
         color: var(--color_text_white);
-        text-align: center;
         font-weight: 100;
     }
-    &Wrapper{
-        margin: 100px auto;
-        display: flex;
-    }
-    &PieChart{
-        display: inline-block;
-        width: 55%;
-        & img{
-            width: 55%;
-            height: auto;
-            float: right;
-            margin-right: 100px;
-        }
-    }
-    &Text{
-        display: inline-block;
-        width: 45%;
-        & img{
-            width: 60%;
-            height: auto;
-            margin-left: 30px;
-        }
-    }
-}
-@media screen and (max-width: 1025px) {
-    .tokenomics{
-        &PieChart{
-            & img{
-                width: 70%;
-            }
-        }
-        &Text{
-            & img{
-                width: 80%;
-            }
-        }
-    }
-}
-    @media screen and (max-width: 1000px) {
-        .tokenomics{
-            &PieChart{
-                & img{
-                    margin-right: 50px;
-                    width: 80%;
-                }
-            }
-            &Text{
-                & img{
-                    width: 90%;
-                }
-            }
-        }
-}
-@media screen and (max-width: 850px) {
-    .tokenomics {
-        &Wrapper {
-            // flex-direction:column;
-            margin: 50px auto;
-        }
-        &PieChart{
-            width: 65%;
-            margin: auto;
-        }
-        &Text {
-            &img{
-                width: 100%;
-                margin-left: 0;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .TextMB{
-        display: block;
-    }
-    .TextPC{
-        display: none;
-    }
-    .tokenomics {
-        & h2{
-            font-size: 35px;
-        }
-        &Wrapper {
-           display: inline-block;
-        }
-        &PieChart {
-            width: 100%;
-            & img{
-                width: 90%;
-                margin: 5%;
-            }
-        }
-        &Text {
-            margin-top: 40px;
-            width: 70%;
-            & img{
-                width: 90%;
-                margin-left: 7%;
-            }
-        }
+    &Piechart{
+        width: 35%;
+        margin: auto;
     }
 }

@@ -1,0 +1,26 @@
+.background{
+    position: relative;
+    &PC{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+    }
+    &MB{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .background{
+        &PC{
+            display: none;
+        }
+        &MB{
+            display: block;
+        }
+    }
+}

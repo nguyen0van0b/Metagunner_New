@@ -54,14 +54,11 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 40vh;
+        height: 50vh;
         &Wrapper{
             top: 35%;
         }
         &Title{
-            // position: absolute;
-            // left: 55%;
-            // top: 27%;
             font-size: 17px;
             font-weight: 200;
             color: var(--color_text_white);
