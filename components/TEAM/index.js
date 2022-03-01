@@ -3,6 +3,7 @@ const urlImgAndy_Ly = '/assets/Andy_Ly_Metagunner.webp'
 const urlImgHO = '/assets/HO-ANH_Metagunner.webp'
 const urlImgDUONG = '/assets/DUONG_Metagunner.webp'
 const urlImgTAN = '/assets/TAN_Metagunner.webp'
+const urlImgSON = '/assets/SON_Metagunner.webp'
 const urlImgAN = '/assets/AN_Metagunner.webp'
 const urlImgTHIEN = '/assets/THIEN_Metagunner.webp'
 const urlImgSteven = '/assets/Steven_Metagunner.webp'
@@ -20,7 +21,7 @@ function Advisors(){
             </div>
         </div>
             <div className={style.AdvisorsWrapperTop}>
-                <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
+                <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-delay="500">
                     <div className={style.AdvisorsWrapperTopItemTop}>
                         <img src={urlImgAndy_Ly} alt=""/>
                     </div>
@@ -39,7 +40,7 @@ function Advisors(){
                         </div>
                     </div>
                 </div>
-                <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
+                <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-delay="500">
                     <div className={style.AdvisorsWrapperTopItemTop}>
                         <img src={urlImgDUONG} alt=""/>
                     </div>
@@ -47,7 +48,7 @@ function Advisors(){
                         <div className={style.name}>
                             <h5>Duong Vu</h5>
                         </div>
-                        <div className={style.position}>Product Lead/Game Designer</div>
+                        <div className={style.position}>Chief Technology Officer/Game Designer</div>
                         <div className={style.background}>
                             <ul>
                                 <li>Chief Technology Officer of BEUS</li>
@@ -60,29 +61,18 @@ function Advisors(){
                 </div>
             </div>
             <div className={style.AdvisorsWrapperBottom}>
-                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="400">
+            <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
-                        <img src={urlImgSteven} alt=""/>
+                        <img src={urlImgSON} alt=""/>
                     </div>
                     <div className={style.AdvisorsWrapperBottomItemBottom}>
                         <div className={style.name} href="">
-                            <h3>Steven Lee</h3>
+                            <h3>Son Dang</h3>
                         </div>
-                        <p>Full-stack Developer</p>
+                        <p>Chief Marketing Officer</p>
                     </div>
                 </div>
-                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="600">
-                    <div className={style.AdvisorsWrapperBottomItemTop}>
-                        <img src={urlImgTHIEN} alt=""/>
-                    </div>
-                    <div className={style.AdvisorsWrapperBottomItemBottom}>
-                    <div className={style.name} href="">
-                            <h3>Thien Nguyen</h3>
-                        </div>
-                        <p>Marketing Manager</p>
-                    </div>
-                </div>
-                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="600">
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgAN} alt=""/>
                     </div>
@@ -93,18 +83,30 @@ function Advisors(){
                         <p>Project Leader</p>
                     </div>
                 </div>
-                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="600">
+             
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
-                        <img src={urlImgMee_Ahn} alt=""/>
+                        <img src={urlImgSteven} alt=""/>
                     </div>
                     <div className={style.AdvisorsWrapperBottomItemBottom}>
-                        <div className={style.name}>
-                            <h3>Mee-Ahn Nguyen</h3>
+                        <div className={style.name} href="">
+                            <h3>Steven Lee</h3>
                         </div>
-                        <p>Lead Designer</p>
+                        <p>Full-stack Developer</p>
                     </div>
                 </div>
-                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="600">
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
+                    <div className={style.AdvisorsWrapperBottomItemTop}>
+                        <img src={urlImgTHIEN} alt=""/>
+                    </div>
+                    <div className={style.AdvisorsWrapperBottomItemBottom}>
+                    <div className={style.name} href="">
+                            <h3>Thien Nguyen</h3>
+                        </div>
+                        <p>Marketing Executive</p>
+                    </div>
+                </div>
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgMINH} alt=""/>
                     </div>
@@ -113,6 +115,17 @@ function Advisors(){
                             <h3>Minh Le</h3>
                         </div>
                         <p>Communications Leader</p>
+                    </div>
+                </div>
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
+                    <div className={style.AdvisorsWrapperBottomItemTop}>
+                        <img src={urlImgMee_Ahn} alt=""/>
+                    </div>
+                    <div className={style.AdvisorsWrapperBottomItemBottom}>
+                        <div className={style.name}>
+                            <h3>Mee-Ahn Nguyen</h3>
+                        </div>
+                        <p>Lead Designer</p>
                     </div>
                 </div>
             </div>

@@ -1,126 +1,195 @@
-// .tokenomics{
-//     overflow:hidden;
-//     padding-top: 90px;
-//     & h2{
-//         font-family: 'Russo One', sans-serif;
-//         font-size: 45px;
-//         color: var(--color_text_white);
-//         text-align: center;
-//         font-weight: 100;
-//     }
-//     &Wrapper{
-//         margin: 100px auto;
-//         display: flex;
-//     }
-//     &PieChart{
-//         display: inline-block;
-//         width: 55%;
-//         & img{
-//             width: 55%;
-//             height: auto;
-//             float: right;
-//             margin-right: 100px;
-//         }
-//     }
-//     &Text{
-//         display: inline-block;
-//         width: 45%;
-//         & img{
-//             width: 45%;
-//             height: auto;
-//             margin-left: 30px;
-//         }
-//     }
-// }
-// @media screen and (max-width: 1025px) {
-//     .tokenomics{
-//         &PieChart{
-//             & img{
-//                 width: 70%;
-//             }
-//         }
-//         &Text{
-//             & img{
-//                 width: 80%;
-//             }
-//         }
-//     }
-// }
-//     @media screen and (max-width: 1000px) {
-//         .tokenomics{
-//             &PieChart{
-//                 & img{
-//                     margin-right: 50px;
-//                     width: 80%;
-//                 }
-//             }
-//             &Text{
-//                 & img{
-//                     width: 90%;
-//                 }
-//             }
-//         }
-// }
-// @media screen and (max-width: 850px) {
-//     .tokenomics {
-//         &Wrapper {
-//             // flex-direction:column;
-//             margin: 50px auto;
-//         }
-//         &PieChart{
-//             width: 65%;
-//             margin: auto;
-//         }
-//         &Text {
-//             &img{
-//                 width: 100%;
-//                 margin-left: 0;
-//             }
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 650px) {
-//     .TextMB{
-//         display: block;
-//     }
-//     .TextPC{
-//         display: none;
-//     }
-//     .tokenomics {
-//         & h2{
-//             font-size: 35px;
-//         }
-//         &Wrapper {
-//            display: inline-block;
-//         }
-//         &PieChart {
-//             width: 100%;
-//             & img{
-//                 width: 90%;
-//                 margin: 5%;
-//             }
-//         }
-//         &Text {
-//             margin-top: 40px;
-//             width: 70%;
-//             & img{
-//                 width: 90%;
-//                 margin-left: 7%;
-//             }
-//         }
-//     }
-// }
 .tokenomics{
-    &Total h2{
+    padding-top: 90px;
+    position: relative;
+    & h2{
         font-family: 'Russo One', sans-serif;
-        text-align: center;
         font-size: 45px;
         color: var(--color_text_white);
+        text-align: center;
         font-weight: 100;
+        margin: 50px auto;
     }
-    &Piechart{
-        width: 35%;
-        margin: auto;
+    &Total{
+        font-family: "Poppins", sans-serif;
+        font-size: 35px !important;
+        font-weight: 400;
+        color: var(--color_text_white);
+        text-align: center;
+        margin: 50px auto;
+        & span{
+            background: linear-gradient(90deg,#ff5003,#ff8e00  76.71%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+    }
+    &Wrapper{
+        display: flex;
+        margin-bottom: 150px
+    }
+    &PieChart{
+        display: inline-block;
+        width: 55%;
+        & img{
+            width: 55%;
+            height: auto;
+            float: right;
+            margin-right: 100px;
+        }
+    }
+    &Text{
+        display: inline-block;
+        width: 45%;
+        & img{
+            width: 45%;
+            height: auto;
+            margin-left: 30px;
+        }
+    }
+}
+
+.bot6{
+    width: 32%;
+    height: auto;
+    position: absolute;
+    top: -35%;
+    right: 0;
+    animation: animationbot6 4s infinite linear 2s;
+}
+
+.bot5{
+    width: 26%;
+    height: auto;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    animation: animationbot5 4s infinite linear 2s;
+}
+
+@keyframes animationbot6 {
+    0% {
+        top: -35%;
+    }
+    50%{
+        top: -40%;
+    }
+    100% {
+        top: -35%;
+    }
+}
+@keyframes animationbot5 {
+    0% {
+        top: 80%;
+    }
+    50%{
+        top: 90%;
+    }
+    100% {
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .tokenomics{
+        &PieChart{
+            & img{
+                width: 70%;
+            }
+        }
+        &Text{
+            & img{
+                width: 80%;
+            }
+        }
+    }
+}
+    @media screen and (max-width: 1000px) {
+        .tokenomics{
+            &PieChart{
+                & img{
+                    margin-right: 50px;
+                    width: 80%;
+                }
+            }
+            &Text{
+                & img{
+                    width: 90%;
+                }
+            }
+        }
+}
+@media screen and (max-width: 850px) {
+    .tokenomics {
+        &Wrapper {
+            // flex-direction:column;
+            margin: 50px auto;
+        }
+        &PieChart{
+            width: 65%;
+            margin: auto;
+        }
+        &Text {
+            &img{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .TextMB{
+        display: block;
+    }
+    .TextPC{
+        display: none;
+    }
+    .tokenomics {
+        & h2{
+            font-size: 35px;
+        }
+        &Total{
+            font-size: 30px !important;
+        }
+        &Wrapper {
+           display: inline-block;
+        }
+        &PieChart {
+            width: 100%;
+            & img{
+                width: 90%;
+                margin: 5%;
+            }
+        }
+        &Text {
+            margin-top: 40px;
+            width: 70%;
+            & img{
+                width: 90%;
+                margin-left: 7%;
+            }
+        }
+    }
+    @keyframes animationbot6 {
+        0% {
+            top: 0;
+        }
+        50%{
+            top: -15%;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    @keyframes animationbot5 {
+        0% {
+            top: 92%;
+        }
+        50%{
+            top: 105%;
+        }
+        100% {
+            top: 92%;
+        }
     }
 }

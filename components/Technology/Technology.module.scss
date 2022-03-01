@@ -2,8 +2,11 @@
 .technologys {
     overflow:hidden;
     padding-top: 90px;
+    position: relative;
     & .container {
         max-width: 1000px;
+        margin: auto;
+        margin-bottom: 300px;
     }
     &title h2{
         font-family: 'Russo One', sans-serif;
@@ -27,6 +30,12 @@
     &Unity{
         width: 20%;
     }
+    &>img{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
 }
 @media screen and (max-width:600px) {
     .technologys {
@@ -39,10 +48,16 @@
                 font-size: 35px;
             }
         }
+    & .container {
+        margin-bottom: 0;
+    }
     &Wrapper {
         & * {
             width: 40%;
         }
+    }
+    &>img{
+        content: url("../../public/assets/BG_footer_MB.webp");
     }
     }
 }

@@ -9,9 +9,8 @@
 .Wrapper{
     &Btn{
         display: flex;
-        justify-content: space-evenly;
-        width: 72%;
-        margin: auto;
+        justify-content: space-between;
+        width: 61%;
         flex-wrap: wrap;
     }
     &Video{
@@ -38,51 +37,181 @@
 .about {
     overflow:hidden;
     position: relative;
-    z-index: 8;
+    // z-index: 8;
     & .container {
-        max-width: 1600px !important;
-        display: flex;
-        align-items: center;
+        max-width: none;
+    }
+    &BG{
+        position: absolute;
+        width: 100vw;
+        min-height: 1200px;
+        height: 125vh;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        background: linear-gradient(328.72deg, #FF5003 17.52%, #FF8E00 58.57%);
+        clip-path: ellipse(60% 56% at 50% 31%);
+        mix-blend-mode: screen;
+        &robot{
+            position: absolute;
+            width: 475px;
+            height: auto;
+            opacity: 0.5;
+            top: 80px;
+            left: 101px;
+            transform: scalex(-1);
+            mix-blend-mode: overlay;
+        }
+        &medic{
+            position: absolute;
+            bottom: 115px;
+            left: 25%;
+            width: 36%;
+            height: auto;
+            mix-blend-mode: luminosity;
+            transform: scalex(-1);
+            opacity: 0.3;
+        }
+        &gunner{
+            position: absolute;
+            width: 48%;
+            height: auto;
+            bottom: 9%;
+            right: 3%;
+            mix-blend-mode: luminosity;
+            opacity: 0.3;
+        }
+        &scout{
+            display: none;
+            mix-blend-mode: luminosity;
+            opacity: 0.3;
+        }
     }
     &Wrapper {
-        padding-top: 20%;
+        clip-path: ellipse(60% 56% at 50% 31%);
+        min-height: 1200px;
+        height: 125vh;
         position: relative;
         z-index: 1;
         &>img{
-            width: 32%;
-            margin-left: 50%;
-            transform: translateX(-50%);
+            position: absolute;
+            left: 60%;
+            bottom: 14%;
+            width: 40%;
+            height: auto;
+            z-index: 0;
         }
-        & h1 {
-            color: var(--color_text_white);
-            font-size: 1rem;
-            max-width: 50%;
-            margin-top: 45px;
-            margin-bottom: 45px;
-            margin-left: 50%;
-            font-weight: 200;
-            line-height: 1.8;
-            padding: 15px;
-            margin: auto;
-            text-align: center;
+        &Text{
+            width: 60%;
+            position: absolute;
+            top: 27%;
+            left: 16%;
+            z-index: 1;
+            &>img{
+                width: 85%;
+            }
+            & h1 {
+                color: var(--color_text_white);
+                font-size: 22px;
+                max-width: 80%;
+                font-weight: 400;
+                line-height: 39px;
+                padding-top: 15px;
+                margin: 0;
+                text-align: justify;
+            }
         }
     }
 }
 
+@media screen and (max-width: 1700px) {
+    .Wrapper{
+        &Btn{
+            width: 75%;
+        }
+    }
+    .about {
+        &BG{
+            clip-path: ellipse(64% 55% at 50% 31%);
+        }
+        &Wrapper {
+            clip-path: ellipse(64% 55% at 50% 31%);
+        }
+    }
+}
+@media screen and (max-width: 1450px) {
+    .Wrapper{
+        &Btn{
+            width: 82%;
+        }
+    }
+    .about{
+        &BG{
+            &medic{
+                left: 15%;
+            }
+            &gunner{
+                right: 14%;
+            }
+        }
+        &Wrapper img{
+            left: 52%;
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 1330px) {
+    .about {
+        &BG{
+            height: 100vh;
+            clip-path: ellipse(75% 50% at 50% 35%);
+            &medic{
+                bottom: 175px;
+                left: 3%;
+            }
+            &gunner{
+                bottom: 14%;
+                right: 17%;
+            }
+        }
+        &Wrapper {
+            height: 100vh;
+            clip-path: ellipse(75% 50% at 50% 35%);
+            & img{
+                left: 52%;
+                width: 60%;
+            }
+            &Text{
+                top: 20%;
+                left: 5%;
+                width: 70%;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1200px) {
-    .aboutWrapper{
-        width: 100%;
-        padding: 150px 10%;
-        &Title{
-            color: var(--color_text_white);
-            font-size: 3rem;
-            margin-bottom: 45px;
-            font-family: "Bangers", sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            & span{
-                color: var(--color_primary);
+    .about{
+        &Wrapper{
+            width: 100%;
+            padding: 150px 10%;
+            &Text{
+                width: 80%;
+            }
+            &Title{
+                color: var(--color_text_white);
+                font-size: 3rem;
+                margin-bottom: 45px;
+                font-family: "Bangers", sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+                & span{
+                    color: var(--color_primary);
+                }
+            }
+            & img{
+                left: 60%;
+                width: 50%;
             }
         }
     }
@@ -95,77 +224,190 @@
             }
         }
     }
-    .btnMB{
-        padding: 15px 40px !important;
-    }
+    // .btnMB{
+    //     padding: 15px 40px !important;
+    // }
 }
-@media screen and (max-width: 1000px) {
+
+    @media screen and (max-width: 1025px) {
     .about {
-        &Wrapper {
-            &>img{
+        &BG{
+            &medic{
                 width: 50%;
+                bottom: 17%;
+                right: 0;
+                left: auto;
+            }
+            &gunner{
+                width: 60%;
+                bottom: 18%;
+                left: 0;
+                right: auto;
             }
         }
-    }
-}
-    @media screen and (max-width: 850px) {
-    .aboutWrapper{
-        & h1{
-            max-width: 70%
+        &Wrapper {
+            &Text{
+                top: 15%;
+                left: 5%;
+                width: 90%;
+                text-align: center;
+                & img{
+                    content: url(../../public/assets/slogan_Mobile.webp);
+                }
+                & h1{
+                    max-width: none;
+                    text-align: center;
+                }
+            }
+            &>img{
+                width: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
     .Wrapper{
         &Btn{
-            width: 90%;
+            width: 100%;
+            flex-direction: row ;
+            justify-content: space-evenly;
         }
     }
 }
+   
 @media screen and (max-width: 769px) {
-    .aboutWrapperTitle{
-        font-size: 2rem !important;
+    .about {
+        &BG{
+            height: 105vh;
+            clip-path: ellipse(90% 50% at 50% 35%);
+        }
+        &Wrapper {
+            height: 105vh;
+            clip-path: ellipse(90% 50% at 50% 35%);
+            &Text{
+                top: 10%;
+            }
+        }
     }
-
-    .btnMB{
-        font-size:20px !important;
+    .Wrapper{
+        &Btn{
+            width: 100%;
+        }
     }
 }
 @media screen and (max-width: 600px) {
-.aboutWrapper{
-    padding: 200px 10%;
-        &>img{
-            width: 100%;
-        }
-        & h1{
-            max-width: 100%;
-        }
-        &Btn{
-            width: 100%;
-        }
-    }
-    .Wrapper{
-        &Video{
-            margin-top: 50px;
-            & video{
-                display: none;
+.about{
+        &BG{
+            clip-path: ellipse(110% 50% at 50% 35%);
+            height: 200vh;
+            padding: 200px 10%;
+            &robot{
+                width: 33%;
+                left: -5%;
+                top: 220px;
             }
-            &imgmb{
+            &gunner{
+                bottom: 50%;
+                left: -20%;
+                width: 130%;
+                transform: translateY(30%);
+            }
+            &medic{
+                top: 22%;
+                width: 95%;
+                bottom: auto;
+                right: -15%;
+            }
+            &scout{
                 display: block;
+                width: 240%;
+                height: auto;
                 position: absolute;
-                top: 0;
-                width: 88% !important;
-                height: 80% !important;
-                margin: 6%;
-                margin-top: 5%;
+                bottom: 9%;
+                right: -50%;
+                transform: scalex(-1);
             }
         }
-    }
-    .btnMB{
-        padding: 26px 65px!important;
+        &Wrapper{
+            height: 200vh;
+            padding: 200px 10%;
+            clip-path: ellipse(110% 50% at 50% 35%);
+            &Text{
+                top: 20%;
+            }
+            &>img{
+                width: 70%;
+            }
+            & h1{
+                max-width: 100%;
+                font-size: 17px;
+                font-weight: 200;
+            }
+            &Btn{
+                width: 100%;
+            }
+        }
+        .Wrapper{
+            &Video{
+                margin-top: 50px;
+                & video{
+                    display: none;
+                }
+                &imgmb{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    width: 88% !important;
+                    height: 80% !important;
+                    margin: 6%;
+                    margin-top: 5%;
+                }
+            }
+        }
+        .btnMB{
+            padding: 26px 65px!important;
+        }
     }
 }
-@media screen and (max-width: 450px) {
-    .aboutWrapper{
-        padding: 100px 10%
+@media screen and (max-width: 400px) {
+    .about{
+        &BG{
+            clip-path: ellipse(150% 50% at 50% 35%);
+            padding: 100px 10%;
+            &robot{
+                width: 33%;
+                left: -5%;
+                top: 220px;
+            }
+            &gunner{
+                bottom: 50%;
+                left: -20%;
+                width: 130%;
+                transform: translateY(30%);
+            }
+            &medic{
+                top: 22%;
+                width: 95%;
+                bottom: auto;
+                right: -15%;
+            }
+            &scout{
+                bottom: 18%;
+            }
+        }
+        &Wrapper{
+            padding: 100px 10%;
+            clip-path: ellipse(150% 50% at 50% 35%);
+            &Text{
+                top: 15%;
+                & img{
+                    width: 90%;
+                }
+            }
+            & img{
+                width: 100%;
+            }
+        }
     }
 }
 

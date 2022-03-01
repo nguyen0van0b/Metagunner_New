@@ -1,7 +1,5 @@
 
 .footer {
-    padding-top: 75px;
-    background-color: black;
     & hr{
         border: 2px solid var(--color_primary);
         width: 88%;
@@ -11,6 +9,7 @@
     &Container{
         display: flex;
         width: 100%;
+        background-color: black;
     }
     &Wrapper {
         position: relative;
@@ -75,11 +74,11 @@
             width: 50%;
             display: inline;
             float: left;
-            & h2{
-                // margin-bottom: 20px;
-                font-size: 20px;
-                font-weight: 600;
-            }
+            // & h2{
+            //     // margin-bottom: 20px;
+            //     font-size: 20px;
+            //     font-weight: 600;
+            // }
             & ul{
                 list-style: none;
                 & li {
@@ -103,11 +102,11 @@
                 margin-bottom: 20px;
                 margin-top: 10px;
             }
-            & h2{
-                // margin-bottom: 20px;
-                font-size: 20px;
-                font-weight: 600;
-            }
+            // & h2{
+            //     // margin-bottom: 20px;
+            //     font-size: 20px;
+            //     font-weight: 600;
+            // }
             & ul{
                 list-style: none;
                 & li{
@@ -127,6 +126,7 @@
         display: block;
         width: 100%;
         text-align: center;
+        background-color: black;
         &Social{ 
             margin-bottom: 20px;
             & img {

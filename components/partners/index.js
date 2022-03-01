@@ -14,7 +14,7 @@ function Partners(){
             <div className={style.partnerstitle}>
                         <img src={title} alt=""/>
             </div>
-            <div className={style.partnersWrapper} data-aos="flip-up" data-aos-once="true" data-aos-delay="300">
+            <div className={style.partnersWrapper} data-aos="flip-up" data-aos-delay="300">
                 <img src={logo1} alt=""/>
                 {/* <img src={imggamefi} alt=""/>
                 <img src={imgderace} alt=""/>

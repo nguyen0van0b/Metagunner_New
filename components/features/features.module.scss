@@ -27,7 +27,7 @@
   display: none !important;
 }
 .features{
-  
+  position: relative;
   &title h1{
     padding-top: 90px;
     font-family: 'Russo One', sans-serif;
@@ -42,12 +42,21 @@
   &MB{
     display: none;
   }
+  &BG{
+    position: absolute;
+    width: 100vw;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #FF8E00 52.6%, #FF5003 100%);
+    mix-blend-mode: screen;
+  }
   &Slider{
     max-width: 1500px;
     display: flex !important;
     align-items: center;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 20px;
     margin-bottom: 50px;
     height: 60vh;
     &IMG{
@@ -65,11 +74,18 @@
       margin-left: 5%;
       height: 100%;
       &img{
-        height: 50%;
+        height: 70%;
         position: relative;
+        & h2{
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          font-weight: bold;
+          font-size: 45px;
+        }
       }
       &cap{
-        height: 50%;
+        height: 35%;
       }
       & img{
         position: absolute;
@@ -81,7 +97,7 @@
         line-height: 1.8;
         text-align: justify;
         font-weight: 200;
-        font-size: 18px;
+        font-size: 17px;
       }
     }
   }
@@ -90,24 +106,25 @@
   .features{
     &Slider{
       width: 80% !important;
+      height: 50vh;
       &Title{
         width: 50%;
       }
     }
   }
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
   .featuresSlider{
-      align-items: flex-start;
+      align-items: flex-end;
       width: 90% !important;
       height: 100%;
       &Title{
         &img{
           position: static;
           margin-bottom: 30px;
-        }
-        & img{
-          position: static;
+          & h2{
+            position: unset;
+          }
         }
       }
     }
@@ -116,12 +133,11 @@
   .features{
     &Slider{
       margin-top: 20px;
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: center;
       &Title{ 
-        width: 70%;
         margin-left: 0;
-        margin-bottom: 20px;
+        width: 100%;
         text-align: center;
         & img{
           margin: 20px auto;
@@ -134,6 +150,9 @@
 }
 @media screen and (max-width:600px) {
   .features{
+    &BG{
+      height: 42%;
+    }
     &PC{
       display: none;
     }
@@ -142,13 +161,22 @@
     }
     &Slider{
       // margin-top: 20px;
-      flex-direction: column-reverse;
+      flex-direction: column;
+      margin: 20px auto 20px;
       &IMG{
         width: 90%;
       }
       &Title{ 
+        margin-bottom: 0;
         & img{
           max-width: 170px;
+        }
+        &img{
+          margin-top: 20px;
+          margin-bottom: 0;
+          & h2{
+            font-size: 30px;
+          }
         }
         & p{
           display: none;

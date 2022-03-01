@@ -19,6 +19,8 @@ const urlOFFICER = "/assets/OFFICER.webp";
 const urlSCOUT = "/assets/SCOUT.webp";
 const urlSNIPER = "/assets/SNIPER.webp";
 const urlMEDIC = "/assets/MEDIC.webp";
+const urlDotOrange = "/assets/dot_orange.webp";
+const urlRectangle = "/assets/Rectangle_Soldier.webp";
 
 
 function SampleNextArrow(props) {
@@ -91,14 +93,17 @@ export default class AsNavFor extends Component {
       <section className={style.character} id="character">
         <div className={clsx("container", style.characterContainer)}>
           <div className={style.charactertitle}>
-            {/* <img src={urlCHARACTER} alt="" /> */}
             <h1>SOLDIER</h1>
             <p>
               The 15 characters of MetaGunner are divided into seven types of
               soldiers
             </p>
+            <img src={urlDotOrange} alt=""/>
           </div>
         </div>
+        <div className={style.characterBG}>
+        </div>
+        {/* <img src={urlRectangle} alt="" className={style.characterBG}/> */}
         <Slider
           asNavFor={this.state.nav2}
           ref={(slider) => (this.slider1 = slider)}
@@ -110,10 +115,10 @@ export default class AsNavFor extends Component {
               <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
               <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
             </div>
-            <div className={style.characterSecondSliderTitle}>
+            <div className={style.characterSecondSliderTitle} data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="600">
               <h2>Destroyer</h2>
               <span>
-                The Destroyer is a heavy-built six-foot-tall man who loves big guns and explosives. His enemies may outrun him, but they cannot outrun his grenades.
+                The Destroyer is a heavy-built six-foot-tall man who loves big guns and explosives.
               </span>
             </div>
           </div>
@@ -125,7 +130,7 @@ export default class AsNavFor extends Component {
             <div className={style.characterSecondSliderTitle}>
               <h2>Special Force</h2>
               <span>
-                The Special Force is an elite trooper specializing in large-scale tasks and always completing them thoroughly. He can deliver every lethal method that you can think of to kill a man.
+                The Special Force is an elite trooper specializing in large-scale tasks and always completing them thoroughly.
               </span>
             </div>
           </div>
@@ -137,7 +142,7 @@ export default class AsNavFor extends Component {
             <div className={style.characterSecondSliderTitle}>
               <h2>Gunner</h2>
               <span>
-                The Gunner is a well-trained Navy SEAL that can improvise, adapt, and overcome any situation. He is a real weapon-savvy and can make the most of everything around him to finish a job.
+                The Gunner is a well-trained Navy SEAL that can improvise, adapt, and overcome any situation.
               </span>
             </div>
           </div>
@@ -161,7 +166,7 @@ export default class AsNavFor extends Component {
             <div className={style.characterSecondSliderTitle}>
               <h2>Scout</h2>
               <span>
-                The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu who always comes with a plan and leaves a place with many dead bodies.
+                The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu.
               </span>
             </div>
           </div>
@@ -172,7 +177,7 @@ export default class AsNavFor extends Component {
             </div>
             <div className={style.characterSecondSliderTitle}>
               <h2>Sniper</h2>
-              <span>{`The Sniper is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy because you will never know when he's going to get you. His targets never survive.`}</span>
+              <span>{`The Sniper is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy. His targets never survive.`}</span>
             </div>
           </div>
           <div className={style.characterSecondSlider}>
@@ -183,7 +188,7 @@ export default class AsNavFor extends Component {
             <div className={style.characterSecondSliderTitle}>
               <h2>Medic</h2>
               <span>
-                The Medic is an extremely experienced battlefield doctor, but do not make the mistake of underestimating his fighting skills. He brings people back from the brink of death, yet he also does a perfect job of sending one to hell.
+                The Medic is an extremely experienced battlefield doctor, but do not make the mistake of underestimating his fighting skills.
               </span>
             </div>
           </div>

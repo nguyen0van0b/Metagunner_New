@@ -72,10 +72,13 @@ export default class AsNavFor extends Component {
             <h1>GAME FEATURES</h1>
           </div>
         </div>
+        <div className={style.featuresBG}>
+        </div>
         <Slider
           {...settings1}
+          
         >
-        <div className={style.featuresSlider}>
+        <div className={style.featuresSlider} data-aos="fade-up" data-aos-delay="600">
           <div className={style.featuresSliderIMG}>
             <div className={style.featuresMB}>
               <img src={urlimgCAMPAIGN_INFO} className={clsx({[style.hide]:!this.state.Campaign})} onClick={() => this.setState({ Campaign: !this.state.Campaign })} alt=""/>
@@ -87,7 +90,8 @@ export default class AsNavFor extends Component {
           </div>
           <div className={style.featuresSliderTitle}>
           <div className={style.featuresSliderTitleimg}>
-            <img src={urlCampaign_Title} alt=""/>
+            {/* <img src={urlCampaign_Title} alt=""/> */}
+            <h2>CAMPAIGN</h2>
           </div>
           <div className={style.featuresSliderTitlecap}>
             <p>
@@ -108,7 +112,8 @@ export default class AsNavFor extends Component {
             </div>
             <div className={style.featuresSliderTitle}>
           <div className={style.featuresSliderTitleimg}>
-              <img src={urlARENA_Title} alt=""/>
+              {/* <img src={urlARENA_Title} alt=""/> */}
+            <h2>ARENA</h2>
                </div>
           <div className={style.featuresSliderTitlecap}>
               <p>
@@ -129,7 +134,8 @@ export default class AsNavFor extends Component {
             </div>
             <div className={style.featuresSliderTitle}>
           <div className={style.featuresSliderTitleimg}>
-              <img src={urlUPGRADE_Title} alt=""/>
+              {/* <img src={urlUPGRADE_Title} alt=""/> */}
+            <h2>UPGRADE</h2>
                </div>
           <div className={style.featuresSliderTitlecap}>
               <p>
@@ -150,7 +156,8 @@ export default class AsNavFor extends Component {
             </div>
             <div className={style.featuresSliderTitle}>
           <div className={style.featuresSliderTitleimg}>
-              <img src={urlLeaderboard_Title} alt=""/>
+              {/* <img src={urlLeaderboard_Title} alt=""/> */}
+            <h2>LEADERBOARD</h2>
                </div>
           <div className={style.featuresSliderTitlecap}>
               <p>

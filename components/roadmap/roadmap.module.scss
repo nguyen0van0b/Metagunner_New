@@ -40,6 +40,7 @@
             width: 25%;
             min-width: 300px;
             margin-bottom: 35px;
+            position: relative;
             & ul{
                 margin-left: 20px;
                 margin-top: 35px;
@@ -51,8 +52,16 @@
                 }
             }
             & h2{
-                font-size: 42px;
-                color: var(--color_primary);
+                width: 60%;
+                font-size: 40px;
+                font-weight: 700;
+                // color: var(--color_primary);
+                background: linear-gradient(90deg, #FF8E00 0%, #FF5003 76.71%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                position: relative;
+                top: 9%;
+                left: 20%;
             }
             & img{
                 width: 101%;

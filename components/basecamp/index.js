@@ -6,6 +6,7 @@ const BgVideo = "/assets/Background_Video.webp";
 const urlimg = '/assets/basecamp_Metagunner.webp'
 const urlimgmb = '/assets/basecamp-mb_Metagunner.webp'
 const urlimgbasecamp = '/assets/img_BaseCamp.webp'
+const urlDotOrange = "/assets/dot_orange.webp";
 
 function Basecamp(){
     return(
@@ -16,8 +17,9 @@ function Basecamp(){
                 </div>
             </div>
             {/* <img src={urlimgmb} alt=""/> */}
-            <div className={style.basecampTitleP}>
-                <p>Basecamp is the place for soldiers to rest and heal after fighting in fierce battles. Basecamp owners can get more rewards without going into monster fights, reduce ammo recovery time for weapons, and have more chance to receive items such as Weapon Cards, Character Cards... </p>
+            <div className={style.basecampTitleP} >
+                <p data-aos="zoom-in" data-aos-delay="400" >Basecamp is the place for soldiers to rest and heal after fighting in fierce battles. Basecamp owners can get more rewards without going into monster fights, reduce ammo recovery time for weapons, and have more chance to receive items such as Weapon Cards, Character Cards... </p>
+                <img src={urlDotOrange} alt=""/>
             </div>
             <div className={style.basecampVideo}>
                 <img src={BgVideo} alt=""/>

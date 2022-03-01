@@ -11,7 +11,6 @@ const imgBottom_menu = '/assets/bottom_menu.webp'
 function Footer(){
     return(
         <footer className={style.footer}>
-            <hr></hr>
             <div className={style.footerContainer}>
                 <div className={style.footerWrapper}>
                     <div className={style.footerWrapperLogo}>
