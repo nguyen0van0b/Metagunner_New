@@ -98,11 +98,43 @@
             }
         }
         &Wrapper{
-            margin-top: 100px;
+            margin-top: 60px;
+            margin-bottom: 0;
             &Item{
                 width: 80%;
+                margin-bottom: 20px;
                 & h2{
-                    font-size: 35px;
+                    font-size: 30px;
+                    top: 35px;
+                    left: 60px;
+                }
+                & img{
+                    width: 70%;
+                }
+                & ul{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    .roadmap{
+        // &Title{
+        //     top: 80px;
+        //     width: 100%;
+        //     & h2{
+        //         font-size: 35px;
+        //     }
+        // }
+        &Wrapper{
+            // margin-top: 60px;
+            &Item{
+                // width: 80%;
+                & h2{
+                    font-size: 25px;
+                    top: 30px;
+                    left: 40px; 
                 }
                 & img{
                     width: 70%;

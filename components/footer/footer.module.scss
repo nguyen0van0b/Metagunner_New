@@ -175,6 +175,7 @@
     .footer {
         &Container{
             flex-direction: column;
+            padding-top: 50px;
         }
         &Wrapper{
             width: 100%;

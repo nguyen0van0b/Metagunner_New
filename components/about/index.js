@@ -49,7 +49,7 @@ function About() {
             data-aos="zoom-in"
             data-aos-delay="400"
           >
-            <p>Lite Paper</p>
+            <p>Pitch Deck</p>
               </a>
               <a
             className={clsx("btn btnSecondary", style.btnMB)}

@@ -1,7 +1,7 @@
 
 .technologys {
     overflow:hidden;
-    padding-top: 90px;
+    padding-top: 30px;
     position: relative;
     & .container {
         max-width: 1000px;
@@ -52,6 +52,7 @@
         margin-bottom: 0;
     }
     &Wrapper {
+        margin-bottom: 200px;
         & * {
             width: 40%;
         }

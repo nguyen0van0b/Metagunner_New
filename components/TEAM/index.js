@@ -48,7 +48,7 @@ function Advisors(){
                         <div className={style.name}>
                             <h5>Duong Vu</h5>
                         </div>
-                        <div className={style.position}>Chief Technology Officer/Game Designer</div>
+                        <div className={style.position}>Chief Technology Officer/ Game Designer</div>
                         <div className={style.background}>
                             <ul>
                                 <li>Chief Technology Officer of BEUS</li>

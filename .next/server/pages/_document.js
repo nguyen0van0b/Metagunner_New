@@ -5,6 +5,26 @@ exports.id = 660;
 exports.ids = [660];
 exports.modules = {
 
+/***/ 593:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ng": () => (/* binding */ FB_PIXEL_ID),
+/* harmony export */   "LV": () => (/* binding */ pageview)
+/* harmony export */ });
+/* unused harmony export event */
+const FB_PIXEL_ID = 3093818837549805;
+const pageview = ()=>{
+    window.fbq('track', 'PageView');
+};
+// https://developers.facebook.com/docs/facebook-pixel/advanced/
+const event = (name, options = {})=>{
+    window.fbq('track', name, options);
+};
+
+
+/***/ }),
+
 /***/ 65:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -17,6 +37,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(859);
+/* harmony import */ var _lib_fpixel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(593);
+
 
 
 
@@ -145,6 +167,20 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2__["default"] {
                 });
               `
                             }
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            name: "facebook-domain-verification",
+                            content: "ekpk9vldc041z1rr4ehe961sm2uu4o"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("noscript", {
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                height: "1",
+                                width: "1",
+                                style: {
+                                    display: 'none'
+                                },
+                                src: `https://www.facebook.com/tr?id=${_lib_fpixel__WEBPACK_IMPORTED_MODULE_3__/* .FB_PIXEL_ID */ .ng}&ev=PageView&noscript=1`
+                            })
                         })
                     ]
                 }),
@@ -205,7 +241,7 @@ module.exports = require("next/dist/shared/lib/is-plain-object.js");
 
 /***/ }),
 
-/***/ 232:
+/***/ 245:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/utils.js");

@@ -12,12 +12,12 @@ function Vidwrapper(){
         <section className={style.Vidwrapper} id='vidwrapper'>
             <div className={style.banner_PC}>
                 <img src={urlimg1} className={style.image1} data-value="5"  alt="" />
-                <img src={urlLogo} className={style.image2} alt="" data-aos="flip-right" data-aos-delay="200"/>
+                <img src={urlLogo} className={style.image2} alt="" data-aos="flip-down" data-aos-delay="100" data-aos-duration="100"/>
                 <img src={urlimg4} className={style.image3} data-value="5"  alt=""/>
             </div>
             <div className={style.banner_MB}>
                 <img src={urlimg2} className={style.image1} data-value="5" alt="" />
-                <img src={urlLogo} className={style.image2} alt="" data-aos="flip-right" data-aos-delay="200"/>
+                <img src={urlLogo} className={style.image2} alt="" data-aos="flip-down" data-aos-delay="100" data-aos-duration="100"/>
                 <img src={urlimg8} className={style.image3} data-value="5" alt=""/>
             </div>
         </section>

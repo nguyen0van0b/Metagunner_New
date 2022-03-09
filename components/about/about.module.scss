@@ -91,6 +91,7 @@
         clip-path: ellipse(60% 56% at 50% 31%);
         min-height: 1200px;
         height: 125vh;
+        margin-bottom: -220px;
         position: relative;
         z-index: 1;
         &>img{
@@ -414,5 +415,32 @@
 @media screen and (max-width: 380px) {
     .aboutWrapper{
         padding: 85px 10%
+    }
+    .about{
+        &BG{
+            &robot{
+                width: 33%;
+                left: -5%;
+                top: 220px;
+            }
+            &gunner{
+                bottom: 50%;
+                left: -20%;
+                width: 140%;
+                transform: translateY(20%);
+            }
+            &medic{
+                top: 22%;
+                width: 95%;
+                bottom: auto;
+                right: -15%;
+            }
+            &scout{
+                bottom: 18%;
+            }
+        }
+        .btnMB{
+            padding: 20px 60px!important;
+        }
     }
 }

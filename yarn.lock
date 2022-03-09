@@ -421,6 +421,13 @@
   dependencies:
     "object-keys" "^1.0.12"
 
+"detective@0.1.0":
+  "integrity" "sha1-eagkhXTSxElROJqQZQz0zl5ebL8="
+  "resolved" "https://registry.npmjs.org/detective/-/detective-0.1.0.tgz"
+  "version" "0.1.0"
+  dependencies:
+    "uglify-js" "~1.2.5"
+
 "dir-glob@^3.0.1":
   "integrity" "sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA=="
   "resolved" "https://registry.npmjs.org/dir-glob/-/dir-glob-3.0.1.tgz"
@@ -1290,6 +1297,13 @@
   dependencies:
     "wrappy" "1"
 
+"optimist@0.3.4":
+  "integrity" "sha1-TW0L1x/60NpLpPbYdtXusE4HSAs="
+  "resolved" "https://registry.npmjs.org/optimist/-/optimist-0.3.4.tgz"
+  "version" "0.3.4"
+  dependencies:
+    "wordwrap" "~0.0.2"
+
 "optionator@^0.9.1":
   "integrity" "sha512-74RlY5FCnhq4jRxVUPKDaRwrVNXMqsGsiW6AJw4XK8hmtm10wC0ypZBLw5IIp85NZMr91+qd1RvvENwg7jjRFw=="
   "resolved" "https://registry.npmjs.org/optionator/-/optionator-0.9.1.tgz"
@@ -1537,6 +1551,16 @@
     "loose-envify" "^1.1.0"
     "object-assign" "^4.1.1"
 
+"script@^0.0.12":
+  "integrity" "sha1-HUnvniLnJFZ7v05vB4UTNeJzR+M="
+  "resolved" "https://registry.npmjs.org/script/-/script-0.0.12.tgz"
+  "version" "0.0.12"
+  dependencies:
+    "detective" "0.1.0"
+    "optimist" "0.3.4"
+  optionalDependencies:
+    "uglify-js" "1.2.6"
+
 "semver@^6.3.0":
   "integrity" "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
   "resolved" "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
@@ -1760,6 +1784,11 @@
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.5.4.tgz"
   "version" "4.5.4"
 
+"uglify-js@~1.2.5", "uglify-js@1.2.6":
+  "integrity" "sha1-01Sy08HPEOvBj6eMEaKL3ZzhWA0="
+  "resolved" "https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz"
+  "version" "1.2.6"
+
 "unbox-primitive@^1.0.1":
   "integrity" "sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw=="
   "resolved" "https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.0.1.tgz"
@@ -1811,6 +1840,11 @@
   "integrity" "sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ=="
   "resolved" "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz"
   "version" "1.2.3"
+
+"wordwrap@~0.0.2":
+  "integrity" "sha1-o9XabNXAvAAI03I0u68b7WMFkQc="
+  "resolved" "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+  "version" "0.0.3"
 
 "wrappy@1":
   "integrity" "sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8="

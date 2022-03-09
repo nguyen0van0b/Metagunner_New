@@ -179,7 +179,7 @@
 @media screen and (max-width: 600px) {
     .character{
         & h1{
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 400;
         }
         &BG{
@@ -242,7 +242,6 @@
     .character{
         &SecondSlider{
             &Title{
-                width: 90%!important;
                 margin: 75px auto auto;
             }
         }

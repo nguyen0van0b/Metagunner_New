@@ -30,6 +30,7 @@
   position: relative;
   &title h1{
     padding-top: 90px;
+    margin-bottom: 50px;
     font-family: 'Russo One', sans-serif;
     color: var(--color_text_white);
     font-size: 45px !important;
@@ -185,6 +186,11 @@
     }}
 }
 @media screen and (max-width:500px) {
+  .features{
+    &title h1{
+      margin-bottom: 20px;
+    }
+  }
   .featuresSliderIMG{
     width: 95%;
   }

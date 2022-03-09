@@ -147,9 +147,14 @@
     .tokenomics {
         & h2{
             font-size: 35px;
+            margin: 25px auto;
         }
         &Total{
-            font-size: 30px !important;
+            font-size: 20px !important;
+            margin: 0px auto;
+            & span{
+                display: block;
+            }
         }
         &Wrapper {
            display: inline-block;
@@ -166,16 +171,19 @@
             width: 70%;
             & img{
                 width: 90%;
-                margin-left: 7%;
+                margin-left: 8%;
             }
         }
+    }
+    .bot5{
+        width: 50%;
     }
     @keyframes animationbot6 {
         0% {
             top: 0;
         }
         50%{
-            top: -15%;
+            top: -2%
         }
         100% {
             top: 0;
@@ -183,13 +191,13 @@
     }
     @keyframes animationbot5 {
         0% {
-            top: 92%;
+            top: 93%;
         }
         50%{
-            top: 105%;
+            top: 96%;
         }
         100% {
-            top: 92%;
+            top: 93%;
         }
     }
 }
