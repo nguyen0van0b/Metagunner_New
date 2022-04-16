@@ -81,7 +81,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2__["default"] {
                             crossOrigin: true
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                            href: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap",
+                            href: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&family=Syne+Mono&display=swap",
                             rel: "stylesheet"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
@@ -106,7 +106,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2__["default"] {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                             property: "og:image",
-                            content: "/assets/Thumbnail_Metagunner.png"
+                            content: "https://metagunner.io/assets/Thumbnail_Metagunner.png"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                             property: "og:image:type",
@@ -142,7 +142,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2__["default"] {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                             name: "twitter:image",
-                            content: "/assets/Thumbnail_Metagunner.png"
+                            content: "https://metagunner.io/assets/Thumbnail_Metagunner.png"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                             name: "twitter:site",
@@ -151,6 +151,10 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2__["default"] {
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                             name: "twitter:creator",
                             content: "@MetaGunner_io"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            name: "thumbnail",
+                            content: "https://metagunner.io/assets/Thumbnail_Metagunner.png"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
                             async: true,

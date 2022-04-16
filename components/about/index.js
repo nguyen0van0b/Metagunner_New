@@ -69,7 +69,8 @@ function About() {
         <div className={style.WrapperVideo}>
             <img src={BgVideo} alt="" />
             <img src={urlimgAblout} className={style.WrapperVideoimgmb} alt=""/>
-            <video src={urlImgBg} controls autoPlay='autoplay' muted='muted'></video>
+            {/* <video src={urlImgBg} controls autoPlay='autoplay' muted='muted'></video> */}
+            <iframe src="https://www.youtube.com/embed/qBndLRj_0Nc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
       </div>
     </section>

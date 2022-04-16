@@ -10,6 +10,8 @@ import Tokenomics from "../components/tokenomics";
 import TEAM from "../components/TEAM";
 import Partners from "../components/partners";
 import Technology from "../components/Technology";
+import Event from "../components/Event";
+
 // import {
 //   Vidwrapper,
 //   About,
@@ -45,11 +47,12 @@ function Home() {
   return (
     <Layout>
       <Header />
+      {/* <Event/> */}
       <Vidwrapper />
       <About />
       <Features />
       <NFTsItem />
-     <Character /> 
+      <Character /> 
       <Basecamp />
       <Roadmap />
       <Tokenomics />

@@ -53,7 +53,7 @@ function Advisors(){
                             <ul>
                                 <li>Chief Technology Officer of BEUS</li>
                                 <li>Senior Game Developer at X-Game</li>
-                                <li>7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvna.</li>
+                                <li>7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvina.</li>
                                 <li>5+ years of experience managing software product outsourcing globally, especially in Japan.</li>
                             </ul>
                         </div>

@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/assets/Logo.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&family=Syne+Mono&display=swap" rel="stylesheet"></link>
           <meta
             name="description"
             content="The Leading Run & Gun Game on BSC."
@@ -26,7 +26,7 @@ class MyDocument extends Document {
             property="og:description"
             content="The Leading Run & Gun Game on BSC."
           />
-          <meta property="og:image" content="/assets/Thumbnail_Metagunner.png" />
+          <meta property="og:image" content="https://metagunner.io/assets/Thumbnail_Metagunner.png" />
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
@@ -39,9 +39,11 @@ class MyDocument extends Document {
             name="twitter:description"
             content="The Leading Run & Gun Game on BSC."
           />
-          <meta name="twitter:image" content="/assets/Thumbnail_Metagunner.png" />
+          <meta name="twitter:image" content="https://metagunner.io/assets/Thumbnail_Metagunner.png" />
           <meta name="twitter:site" content="@MetaGunner_io" />
           <meta name="twitter:creator" content="@MetaGunner_io"></meta>
+
+          <meta name="thumbnail" content="https://metagunner.io/assets/Thumbnail_Metagunner.png"  />
 
           <script
             async
